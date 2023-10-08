@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul, ol {
+    list-style: none;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Thin.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  body {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow-x: hidden;
+    position: relative;
+    background: #fff;
+    transition: 0.3s ease;
+  }
+  :root {
+    --fz:.2578vw;
+  }
+  @media (min-width: 768px) {
+    :root {
+        --fz:.13021vw ;
+    }
+}
+@media (min-width: 992px) {
+    :root {
+        --fz:.08581vw ;
+    }
+}
+@media (min-width: 1200px) {
+    :root {
+        --fz:.0521vw;
+    }
+}
+.content {
+    max-width: calc(1440px  + 16px);
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+    transition: .3s ease;
+
+    @media (max-width:1024px) {
+      max-width: calc(1440px  + 20px);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+}
+
+.attention {
+    width: 100%;
+    background: #131214;
+    padding: 8px 0;
+    @media (max-width:1000px) {
+        padding: 10px 0;
+    }
+    &.hidden {
+      display: none;
+    }
+    .content {
+        display: flex;
+        gap: 130px;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (max-width:1000px) {
+            gap: 0;
+            align-items: flex-start;
+        }
+
+        p {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px; /* 107.692% */
+
+            @media (max-width:1000px) {
+                font-size: 10px;
+            }
+        }
+        .attention-close {
+            cursor: pointer;
+
+            &:hover {
+                svg path {
+                    stroke: #FFF;
+                }
+            }
+        }
+
+    }
+}

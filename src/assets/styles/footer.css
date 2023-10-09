@@ -155,6 +155,7 @@
   line-height: 28.8px; /* 221.538% */
 }
 .footer .footer-mobile {
+  padding: 32px 0 0 0;
   display: none;
 }
 @media (max-width: 1024px) {

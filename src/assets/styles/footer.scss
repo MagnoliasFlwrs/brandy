@@ -153,6 +153,7 @@
         }
     }
     .footer-mobile {
+        padding: 32px 0 0 0;
         display: none;
         @media (max-width:1024px) {
             display: block;

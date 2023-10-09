@@ -8,7 +8,8 @@ attentionCloseBtn.addEventListener('click' , ()=> {
 //pc-params
 const paramsBtn = document.querySelector('.params');
 const paramspanel = document.querySelector('.params-panel');
-const searchInput = document.querySelector('.input-wrapper input')
+const searchInput = document.querySelector('.input-wrapper input');
+
 if (paramsBtn) {
     paramsBtn.addEventListener('click' , ()=> {
         paramsBtn.classList.toggle('active');
@@ -19,17 +20,25 @@ if (paramsBtn) {
         }
         paramspanel.classList.toggle('active');
         searchInput.classList.toggle('active');
-        
-    }) 
+
+    })
 
 }
 
 //search-results
 const searchWrap = document.querySelector('.search-wrapper');
-const overlay = document.querySelector('.overlay')
+const overlay = document.querySelector('.overlay');
+const resultWrap = document.querySelector('.results');
+
 searchInput.addEventListener('input' , ()=> {
     overlay.classList.add('open');
     searchWrap.classList.add('to-result');
+    resultWrap.classList.add('active')
+})
+overlay.addEventListener('click' , ()=> {
+    overlay.classList.remove('open');
+    searchWrap.classList.remove('to-result');
+    resultWrap.classList.remove('active')
 })
 
 
@@ -94,4 +103,15 @@ backBtns.forEach(el=> {
         let droprightScreen = e.target.closest('.dropright-screen');
         droprightScreen.classList.remove('active');
     })
+})
+
+const burgerBtn = document.querySelector('.burger-btn');
+const burgerCloseBtn = document.querySelector('.burger-close-btn');
+const mobileBody = document.querySelector('.mobile-menu');
+
+burgerBtn.addEventListener('click' , ()=> {
+    mobileBody.classList.add('active')
+})
+burgerCloseBtn.addEventListener('click' , ()=> {
+    mobileBody.classList.remove('active')
 })

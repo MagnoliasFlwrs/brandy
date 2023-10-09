@@ -7,6 +7,7 @@
     <title>Главная</title>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="attention">
         <div class="content">
             <p>Цены на сайте носят исключительно информационный характер и могут отличаться от действительных отпускных цен.</p>
@@ -63,26 +64,31 @@
                         <img src="./src/assets/images/logo.png" alt="logo">
                     </a>
                     <div class="search-wrapper">
-                        <input type="text" placeholder="Поиск по товарам...">
-                        <div class="search-btns">
-                            <button type="button" class="params">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                    <g clip-path="url(#clip0_939_7096)">
-                                      <path d="M4.74792 21V14M4.74792 10V3M12.7479 21V12M12.7479 8V3M20.7479 21V16M20.7479 12V3M1.74792 14H7.74792M9.74792 8H15.7479M17.7479 16H23.7479" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                      <clipPath id="clip0_939_7096">
-                                        <path d="M0.747925 8C0.747925 3.58172 4.32965 0 8.74792 0H16.7479C21.1662 0 24.7479 3.58172 24.7479 8V16C24.7479 20.4183 21.1662 24 16.7479 24H8.74792C4.32965 24 0.747925 20.4183 0.747925 16V8Z" fill="white"/>
-                                      </clipPath>
-                                    </defs>
-                                </svg>
-                                Параметры
-                            </button>
-                            <button type="submit" class="search-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                    <path d="M21.33 21L16.98 16.65M19.33 11C19.33 15.4183 15.7482 19 11.33 19C6.91168 19 3.32996 15.4183 3.32996 11C3.32996 6.58172 6.91168 3 11.33 3C15.7482 3 19.33 6.58172 19.33 11Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
-                            </button>
+                        <div class="input-wrapper">
+                            <input class="search-input" type="text" placeholder="Поиск по товарам...">
+                            <div class="search-btns">
+                                <button type="button" class="params">
+                                    Параметры
+                                </button>
+                                <button type="submit" class="search-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                        <path d="M21.33 21L16.98 16.65M19.33 11C19.33 15.4183 15.7482 19 11.33 19C6.91168 19 3.32996 15.4183 3.32996 11C3.32996 6.58172 6.91168 3 11.33 3C15.7482 3 19.33 6.58172 19.33 11Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="params-panel">
+                            <div class="select-wrap">
+                                <div class="select color-select">
+                                    <p data-current="0">Цвет</p>
+                                </div>
+                                <ul class="select-list">
+                                    <li data-value="1">Черный</li>
+                                    <li data-value="2">Красный</li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="Цена, от">
+                            <input type="text" placeholder="Цена, до">
                         </div>
                     </div>
                     <div class="links">

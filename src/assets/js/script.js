@@ -5,6 +5,33 @@ attentionCloseBtn.addEventListener('click' , ()=> {
     attention.classList.add('hidden');
 })
 
+//pc-params
+const paramsBtn = document.querySelector('.params');
+const paramspanel = document.querySelector('.params-panel');
+const searchInput = document.querySelector('.input-wrapper input')
+if (paramsBtn) {
+    paramsBtn.addEventListener('click' , ()=> {
+        paramsBtn.classList.toggle('active');
+        if (paramsBtn.innerHTML === 'Скрыть') {
+            paramsBtn.innerHTML = 'Параметры';
+        }else {
+            paramsBtn.innerHTML = 'Скрыть';
+        }
+        paramspanel.classList.toggle('active');
+        searchInput.classList.toggle('active');
+        
+    }) 
+
+}
+
+//search-results
+const searchWrap = document.querySelector('.search-wrapper');
+const overlay = document.querySelector('.overlay')
+searchInput.addEventListener('input' , ()=> {
+    overlay.classList.add('open');
+    searchWrap.classList.add('to-result');
+})
+
 
 
 // custom select

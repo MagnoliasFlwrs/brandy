@@ -420,10 +420,16 @@
                             font-style: normal;
                             font-weight: 400;
                             line-height: 24px; /* 171.429% */
+                            transition: .3s ease;
+
+                            &:hover {
+                                color: #0464EC;
+                            }
                         }
                         &:last-child {
                             a {
                                 color: #0464EC;
+                                font-weight: 600;
                             }
                         }
                     }
@@ -491,8 +497,16 @@
                 overflow-y: auto;
 
                 &.active {
-                    transition: .5s ease;
+                    animation: mobileAnimation .5s ease-out;
                     left: 0;
+                }
+                @keyframes mobileAnimation {
+                    from {
+                        left:-2100px
+                    }
+                    to {
+                        left: 0;
+                    }
                 }
                 .mobile-head {
                     padding: 28px 20px 11px;
@@ -582,7 +596,7 @@
                             li {
                                 border-bottom: 1px solid #EAEBF0;
                                 background: #FAFBFC;
-                                position: relative;
+                                
                                 a {
                                     width: 100%;
                                     padding: 24px 14px;
@@ -614,6 +628,7 @@
                                     transition: .5s ease;
                                     left: -2100px;
                                     z-index: 3;
+                                    overflow-y: scroll;
 
 
                                     &.active {

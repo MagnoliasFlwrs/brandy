@@ -115,3 +115,18 @@ burgerBtn.addEventListener('click' , ()=> {
 burgerCloseBtn.addEventListener('click' , ()=> {
     mobileBody.classList.remove('active')
 })
+
+const promoSwiper = document.querySelector('.promo-swiper');
+
+if (promoSwiper) {
+    const swiper = new Swiper(promoSwiper, {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+}

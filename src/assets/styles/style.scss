@@ -33,6 +33,13 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: "Calypso";
+    src: url(../fonts/Calypso.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
   body {
     font-family: "Montserrat";
     margin: 0;
@@ -138,5 +145,34 @@
 
   &.open {
       display: block;
+  }
+}
+.blue-btn {
+  display: flex;
+  width: 116px;
+  padding: 15px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #0464EC 0%, #0464EC 100%), linear-gradient(147deg, #73DFE7 6.95%, #0063F7 93.05%);
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 8px;
+    background: linear-gradient(0deg, #034096 0%, #034096 100%), linear-gradient(147deg, #73DFE7 6.95%, #0063F7 93.05%);
+  }
+  &:active {
+    border-radius: 8px;
+    background: linear-gradient(0deg, #0356C9 0%, #0356C9 100%), linear-gradient(147deg, #73DFE7 6.95%, #0063F7 93.05%);
   }
 }

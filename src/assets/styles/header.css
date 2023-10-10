@@ -471,16 +471,17 @@
   line-height: 140%;
 }
 .header .header-mobile .content .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: -1000px;
+  left: -2100px;
   background-color: #FFF;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   z-index: 2;
   transition: 0.5s ease;
+  overflow-y: auto;
 }
 .header .header-mobile .content .mobile-menu.active {
   transition: 0.5s ease;
@@ -568,6 +569,7 @@
 .header .header-mobile .content .mobile-menu .mobile-body li .dropdown-list li {
   border-bottom: 1px solid #EAEBF0;
   background: #FAFBFC;
+  position: relative;
 }
 .header .header-mobile .content .mobile-menu .mobile-body li .dropdown-list li a {
   width: 100%;
@@ -591,11 +593,11 @@
 .header .header-mobile .content .mobile-menu .mobile-body li .dropdown-list li .dropright-screen {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 84px);
+  height: 100vh;
   background-color: #FFF;
   top: 0;
   transition: 0.5s ease;
-  left: -1000px;
+  left: -2100px;
   z-index: 3;
 }
 .header .header-mobile .content .mobile-menu .mobile-body li .dropdown-list li .dropright-screen.active {

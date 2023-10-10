@@ -123,10 +123,76 @@ if (promoSwiper) {
         loop: true,
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
       });
+}
+
+
+// category-list
+
+const showHideBtns = document.querySelectorAll('.show-hide-list');
+const categoryLists = document.querySelectorAll('.category-items');
+const catalogCategoryBtn = document.querySelector('.show-more-btn')
+
+if (showHideBtns && categoryLists) {
+    function clearCategoryListsClasses() {
+        categoryLists.forEach(el => {
+            if(el.classList.contains('show')) {
+                el.classList.remove('show');
+                el.nextElementSibling.classList.remove('hide');
+            }
+        })
+    }
+    showHideBtns.forEach(el=> {
+        let arr = el.previousElementSibling.querySelectorAll('li');
+        let countContent = el.querySelector('.count')
+        if (arr.length <= 4) {
+            el.classList.add('hide');
+        } else {
+            let count = arr.length - 4;
+            countContent.innerHTML = count
+        }
+        el.addEventListener('click' , (e)=> {
+            clearCategoryListsClasses();
+            let currContent = e.target.closest('.category-card');
+            let currUl = currContent.querySelector('ul');
+            let currLiArr = currUl.querySelectorAll('li');
+
+            currContent.classList.add('active')
+            currUl.classList.add('show');
+            el.classList.add('hide');
+        })
+    })
+    if(catalogCategoryBtn) {
+        let arr = catalogCategoryBtn.previousElementSibling.querySelectorAll('.catalog-item');
+        let countContent = catalogCategoryBtn.querySelector('.count')
+        window.onresize = function() {
+            if (window.innerWidth < 1024) {
+                if (arr.length <= 5) {
+                    el.classList.add('hide');
+                } else {
+                    let count = arr.length - 5;
+                    countContent.innerHTML = count;
+                }
+            } else {
+                if (arr.length <= 9) {
+                    el.classList.add('hide');
+                } else {
+                    let count = arr.length - 9;
+                    countContent.innerHTML = count;
+                }
+            }
+        }
+        catalogCategoryBtn.addEventListener('click' , ()=> {
+            const ul = catalogCategoryBtn.closest('.content').querySelector('.catalog-category');
+            ul.classList.add('show');
+            catalogCategoryBtn.classList.add('hide');
+        })
+    }
+
 }

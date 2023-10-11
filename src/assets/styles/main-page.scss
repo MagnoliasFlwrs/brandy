@@ -291,6 +291,8 @@
     }
     .catalog-head-mobile {
         display: flex;
+        width: 100%;
+        overflow: hidden;
         flex-direction: column;
         gap: 16px;
         display: none;
@@ -318,15 +320,16 @@
         }
         .sort {
             display: flex;
-            overflow-x: scroll;
+            width: 100%;
+            overflow-x: auto;
             gap: 16px;
             -ms-overflow-style: none;
-                scrollbar-width: none;
-                flex-shrink: 0;
+            scrollbar-width: none;
+            flex-shrink: 0;
 
-                &::-webkit-scrollbar {
-                    width: 0;
-                }
+            &::-webkit-scrollbar {
+                background-color: transparent;
+            }
             span {
                 color: #131214;
                 font-family: Montserrat;

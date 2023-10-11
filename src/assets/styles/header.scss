@@ -1,5 +1,6 @@
 @import url(./style.css);
 .header {
+    position: relative;
     .header-pc {
         @media (max-width:1024px) {
             display: none;
@@ -438,7 +439,7 @@
         }
     }
     .header-mobile {
-        position: relative;
+        // position: relative;
         background: #FFF;
         box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.20);
         display: none;
@@ -484,7 +485,7 @@
                 }
             }
             .mobile-menu {
-                position: fixed;
+                position: absolute;
                 top: 0;
                 left: -2100px;
                 background-color: #FFF;

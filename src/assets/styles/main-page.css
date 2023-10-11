@@ -295,6 +295,8 @@
 }
 .catalog-block .catalog-head-mobile {
   display: flex;
+  width: 100%;
+  overflow: hidden;
   flex-direction: column;
   gap: 16px;
   display: none;
@@ -325,14 +327,15 @@
 }
 .catalog-block .catalog-head-mobile .sort {
   display: flex;
-  overflow-x: scroll;
+  width: 100%;
+  overflow-x: auto;
   gap: 16px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   flex-shrink: 0;
 }
 .catalog-block .catalog-head-mobile .sort::-webkit-scrollbar {
-  width: 0;
+  background-color: transparent;
 }
 .catalog-block .catalog-head-mobile .sort span {
   color: #131214;

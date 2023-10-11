@@ -72,14 +72,14 @@
     }
 }
 .content {
-    max-width: calc(1440px  + 16px);
+    max-width: calc(1120px  + 16px);
     margin: 0 auto;
     padding: 0 16px;
     width: 100%;
     transition: .3s ease;
 
     @media (max-width:1024px) {
-      max-width: calc(1440px  + 20px);
+      max-width: calc(1120px  + 16px);
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -174,5 +174,90 @@
   &:active {
     border-radius: 8px;
     background: linear-gradient(0deg, #0356C9 0%, #0356C9 100%), linear-gradient(147deg, #73DFE7 6.95%, #0063F7 93.05%);
+  }
+}
+.new-label {
+  display: flex;
+  padding: 2.5px 11.5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(201, 240, 255, 0.40);
+  backdrop-filter: blur(9px);
+  color: #0065D0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 160% */
+  text-transform: uppercase;
+  width: fit-content;
+
+  @media (max-width:768px) {
+    color: #0065D0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10.315px; /* 147.363% */
+    text-transform: uppercase;
+  }
+}
+.on-sale {
+  display: flex;
+  padding: 2.5px 11px 2.5px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(255, 229, 229, 0.40);
+  backdrop-filter: blur(10px);
+  color: #D3180C;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 160% */
+  text-transform: uppercase;
+  width: fit-content;
+  @media (max-width:768px) {
+    color: #D3180C;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10.315px; /* 147.363% */
+    text-transform: uppercase;
+  }
+}
+.eco {
+  display: flex;
+  padding: 2.5px 11px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(236, 252, 229, 0.40);
+  backdrop-filter: blur(10px);
+  color: #198155;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 160% */
+  text-transform: uppercase;
+  width: fit-content;
+  @media (max-width:768px) {
+    color: #198155;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10.315px; /* 147.363% */
+    text-transform: uppercase;
   }
 }

@@ -141,13 +141,13 @@
   justify-content: space-between;
 }
 .header .header-pc .main-row .content .search-wrapper {
-  padding: 16px;
   position: relative;
   max-width: 701px;
   width: 100%;
 }
 .header .header-pc .main-row .content .search-wrapper.to-result {
   border-radius: 8px;
+  padding: 16px;
   background: #FFF;
   box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
   z-index: 5;
@@ -254,6 +254,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 2;
   display: none;
 }
 .header .header-pc .main-row .content .search-wrapper .params-panel.active {

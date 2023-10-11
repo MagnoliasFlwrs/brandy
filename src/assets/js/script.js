@@ -201,8 +201,8 @@ if (showHideBtns && categoryLists) {
 window.addEventListener('DOMContentLoaded', (event) => {
     const tabsBtns = document.querySelectorAll('.tabs-panel li');
     const cars = document.querySelectorAll('.tab-container .tab-content');
-  
-  
+
+
     if(tabsBtns){
       tabsBtns.forEach(function(el){
         el.addEventListener('click', function(ev){
@@ -214,7 +214,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let num = target.dataset.num;
     let selector = '.tab-container .tab-content[data-num="'+num+'"]';
     let targetTab = document.querySelector(selector);
-  
+
     tabsBtns.forEach(function(el){
       el.classList.remove('active');
     });
@@ -223,10 +223,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
     target.classList.add('active');
     targetTab.classList.add('active');
-  
+
   }
-  
-  
+
+
   });
 
   // gallery
@@ -297,4 +297,26 @@ if (productsSwipers) {
               }
           });
     })
+}
+const partnersSwiper = document.querySelector('.partners-swiper');
+if(partnersSwiper) {
+    const swiper = new Swiper(partnersSwiper, {
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+            },
+            970: {
+              slidesPerView: 3,
+            },
+            1100: {
+              slidesPerView: 4,
+            }
+          }
+      });
 }

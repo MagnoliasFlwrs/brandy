@@ -303,6 +303,64 @@ if(partnersSwiper) {
     const swiper = new Swiper(partnersSwiper, {
         loop: true,
         slidesPerView: 1,
+        spaceBetween: 24,
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 24,
+            },
+            970: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+            1100: {
+              slidesPerView: 4,
+              spaceBetween: 24,
+            }
+          }
+      });
+}
+const pictureSwiper = document.querySelector('.picture-swiper');
+if(pictureSwiper) {
+    const swiper = new Swiper(pictureSwiper, {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+}
+
+const shadowItems = document.querySelectorAll('.info-block li');
+
+function clearShadowActiveItems() {
+    shadowItems.forEach(el=> {
+        if (el.classList.contains('active')) {
+            el.classList.remove('active')
+        }
+    })
+}
+if (shadowItems) {
+    shadowItems.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            clearShadowActiveItems();
+            el.classList.add('active');
+        })
+    })
+}
+const customersSwiper = document.querySelector('.customers-swiper')
+if (customersSwiper) {
+    const swiper = new Swiper(customersSwiper, {
+        loop: true,
+        slidesPerView: 1,
         navigation: {
           nextEl: '.button-next',
           prevEl: '.button-prev',
@@ -315,8 +373,39 @@ if(partnersSwiper) {
               slidesPerView: 3,
             },
             1100: {
-              slidesPerView: 4,
+              slidesPerView: 5,
             }
           }
       });
+}
+
+
+// contact-modal
+
+const openModalBtns = document.querySelectorAll('.to-modal');
+const modalContact = document.querySelector('.modal-contact');
+const closeContactModal = document.querySelector('.modal-contact .modal-close');
+
+function openModal() {
+    openModalBtns.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            modalContact.classList.add('open');
+            overlay.classList.add('open');
+        })
+    })
+}
+function closeModal() {
+    closeContactModal.addEventListener('click' , ()=> {
+        modalContact.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+    overlay.addEventListener('click' , ()=> {
+        modalContact.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+}
+
+if(modalContact) {
+    openModal();
+    closeModal();
 }

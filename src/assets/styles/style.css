@@ -398,6 +398,7 @@ body {
 .breadcrumbs {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 .breadcrumbs li a {
   color: #585C5F;
@@ -417,11 +418,68 @@ body {
 }
 .breadcrumbs li.separator {
   color: #585C5F;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: Calypso;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 21px */
   letter-spacing: 0.07px;
+  margin-top: 3px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.custom-checkbox .checkbox {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.custom-checkbox input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #E1E1E1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.custom-checkbox span {
+  color: #131214;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkbox .checkmark {
+  display: block;
+}
+
+.custom-checkbox input:checked ~ .checkbox {
+  background: #0464EC;
+  border: 1px solid #0464EC;
 }/*# sourceMappingURL=style.css.map */

@@ -409,3 +409,54 @@ if(modalContact) {
     openModal();
     closeModal();
 }
+
+
+// price-slider
+let sliderOne = document.getElementById("price-slider-1");
+let sliderTwo = document.getElementById("price-slider-2");
+let displayValOne = document.querySelector(".price-from");
+let displayValTwo = document.querySelector(".price-to");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("price-slider-1").max;
+
+function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.value = sliderOne.value;
+    fillColor();
+}
+function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.value = sliderTwo.value;
+    fillColor();
+}
+function fillColor(){
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #0465eca4 ${percent1}% , #0465eca4 ${percent2}%, #dadae5 ${percent2}%)`;
+}
+if(sliderOne) {
+    sliderOne.addEventListener('input' , ()=>{
+        slideOne();
+    }) 
+}
+if(sliderTwo) {
+    sliderTwo.addEventListener('input' ,  () => {
+        slideTwo();
+    }) 
+}
+
+//category-show-more
+
+const categoryShowMoreBtn = document.querySelector('.category-info span');
+
+if (categoryShowMoreBtn) {
+    categoryShowMoreBtn.addEventListener('click' , ()=> {
+        categoryShowMoreBtn.classList.add('hide');
+        categoryShowMoreBtn.closest('.category-info').querySelector('p').classList.add('show')
+    }) 
+}

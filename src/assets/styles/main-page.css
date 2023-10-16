@@ -426,7 +426,7 @@
 }
 .catalog-block .catalog-category li .category-card-wrapper {
   display: flex;
-  height: 200px;
+  height: 220px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
@@ -444,6 +444,8 @@
   left: 0;
   width: 100%;
   min-height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 8px;
   background: #FFF;
   padding: 15px;

@@ -387,30 +387,299 @@
                 display: flex;
                 gap: 62px;
                 align-items: center;
-                .catalog {
-                    display: flex;
-                    width: 260px;
-                    padding: 12px 16px;
-                    align-items: center;
-                    gap: 16px;
-                    flex-shrink: 0;
-                    border-right: 1px solid #EDEDED;
-                    border-left: 1px solid #EDEDED;
-                    background: #F5F6FA;
+                justify-content: space-between;
+                .navigation-catalog {
                     position: relative;
-                    color: #131214;
-                    font-family: Montserrat;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px; /* 171.429% */
+                    .catalog {
+                        display: flex;
+                        width: 260px;
+                        padding: 12px 16px;
+                        align-items: center;
+                        gap: 16px;
+                        flex-shrink: 0;
+                        border-right: 1px solid #EDEDED;
+                        border-left: 1px solid #EDEDED;
+                        background: #F5F6FA;
+                        position: relative;
+                        color: #131214;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 171.429% */
+                        cursor: pointer;
 
-                    &::before {
-                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg clip-path='url(%23clip0_642_4521)'%3E%3Cline x1='0.725464' y1='3.42529' x2='14.2745' y2='3.42529' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='0.725403' y1='7.25' x2='14.2745' y2='7.25' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='0.725403' y1='11.0747' x2='14.2745' y2='11.0747' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_642_4521'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-                        display: block;
-                        margin-top: 8px;
+                        &::before {
+                            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg clip-path='url(%23clip0_642_4521)'%3E%3Cline x1='0.725464' y1='3.42529' x2='14.2745' y2='3.42529' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='0.725403' y1='7.25' x2='14.2745' y2='7.25' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='0.725403' y1='11.0747' x2='14.2745' y2='11.0747' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_642_4521'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                            display: block;
+                            margin-top: 8px;
+                        }
+                        &.active::before {
+                            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 25 24' fill='none'%3E%3Cg clip-path='url(%23clip0_917_5080)'%3E%3Cpath d='M5.24463 19.5L12.7447 12M12.7447 12L20.2446 4.5M12.7447 12L5.24463 4.5M12.7447 12L20.2446 19.5' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_917_5080'%3E%3Crect width='24' height='24' fill='white' transform='translate(0.744629)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                            display: block;
+                            margin-top: 8px;
+                        }
+                    }
+                    .catalog-popup {
+                        position: absolute;
+                        border-radius: 8px;
+                        top: 70px;
+                        left: 0px;
+                        // max-height: 546px;
+                        background-color: #fff;
+                        z-index: 100;
+                        display: flex;
+                        box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+                        overflow: hidden;
+                        height: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all .3s ease;
+
+                        &.active {
+                            transition: all .3s ease;
+                            height: 546px;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        .catalog-tabs-panel {
+                            width: 270px;
+                            position: relative;
+                            flex-direction: column;
+                            overflow-y: auto;
+                            scrollbar-width: thin;
+                            flex-shrink: 0;
+                            scrollbar-color: #0464EC transparent;
+                            &::-webkit-scrollbar {
+                                width: 5px;
+                                background-color: #0464EC;
+                            }
+                            @media (max-width:1024px) {
+                                display: none;
+                            }
+                            li {
+                                width: 100% ;
+                                display: flex;
+                                width: 260px;
+                                padding: 12px 16px;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 20px;
+                                color: #131214;
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; /* 171.429% */
+                                transition: .3s ease;
+                                cursor: pointer;
+
+                                &.active {
+                                    a {
+                                        color: #034096;
+                                    }
+                                }
+
+
+                                &::after {
+                                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M6.95536 4.65899L11.5923 9.00015L6.95536 13.3413' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                                    display: block;
+                                }
+                                &.catalog-dropright:last-child {
+                                    a {
+                                        color: initial !important;
+                                        font-weight: initial !important;
+                                    }
+
+                                }
+
+                                .catalog-submenu {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 100%;
+                                    padding: 20px;
+                                    display: flex;
+                                    gap: 25px;
+                                    border-left: 3px solid #0464EC;
+                                    background: #fff;
+                                    z-index: 2;
+                                    display: none;
+
+                                    ul {
+                                        display: flex;
+                                        flex-direction: column;
+                                        li {
+                                            width: max-content;
+                                            a {
+                                                color: #131214;
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: 24px; /* 171.429% */
+
+                                                &:hover {
+                                                    color: #0464EC;
+                                                }
+                                            }
+                                            &::after {
+                                                content: initial;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    color: #0464EC;
+
+                                    .catalog-submenu {
+                                        display: flex;
+                                    }
+                                }
+                            }
+                        }
+                        .catalog-item-content {
+                            padding-left: 20px;
+                            width: 400px;
+                            .catalog-tab-container{
+
+                                .tab-content {
+                                    display: none;
+                                    &.active {
+                                        display: block;
+                                    }
+                                    .catalog-submenu {
+                                        padding: 20px;
+                                        display: flex;
+                                        gap: 25px;
+                                        background: #fff;
+
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            li {
+                                                width: max-content;
+                                                a {
+                                                    color: #131214;
+                                                    font-family: Montserrat;
+                                                    font-size: 14px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 24px; /* 171.429% */
+                                                    text-align: left;
+
+                                                    &:hover {
+                                                        color: #0464EC;
+                                                    }
+                                                }
+                                                &::after {
+                                                    content: initial;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+
+
+                        .catalog-wrapper {
+                            width: 260px;
+                            border: 1px solid #EDEDED;
+                            border-top: none;
+                            height: 488px;
+                            position: relative;
+
+                            @media (max-width:1024px) {
+                                display: none;
+                            }
+                            .catalog-menu {
+                                width: 100%;
+                                display: flex;
+                                height: 100%;
+                                flex-direction: column;
+                                overflow-y: scroll;
+                                -ms-overflow-style: none;
+                                scrollbar-width: none;
+                                flex-shrink: 0;
+
+                                &::-webkit-scrollbar {
+                                    width: 0;
+                                }
+                                li {
+                                    width: 100% ;
+                                    display: flex;
+                                    width: 260px;
+                                    padding: 12px 16px;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    gap: 20px;
+                                    color: #131214;
+                                    font-family: Montserrat;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px; /* 171.429% */
+                                    transition: .3s ease;
+                                    cursor: pointer;
+
+
+                                    &::after {
+                                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M6.95536 4.65899L11.5923 9.00015L6.95536 13.3413' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                                        display: block;
+                                    }
+
+                                    .catalog-submenu {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 100%;
+                                        padding: 20px;
+                                        display: flex;
+                                        gap: 25px;
+                                        border-left: 3px solid #0464EC;
+                                        background: #fff;
+                                        z-index: 2;
+                                        display: none;
+
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            li {
+                                                width: max-content;
+                                                a {
+                                                    color: #131214;
+                                                    font-family: Montserrat;
+                                                    font-size: 14px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 24px; /* 171.429% */
+
+                                                    &:hover {
+                                                        color: #0464EC;
+                                                    }
+                                                }
+                                                &::after {
+                                                    content: initial;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:hover {
+                                        color: #0464EC;
+
+                                        .catalog-submenu {
+                                            display: flex;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
+
                 ul {
                     width: 100%;
                     display: flex;
@@ -557,7 +826,7 @@
                         // position: relative;
                         transition: .3s ease;
                         li {
-    
+
                             a {
                                 color: #131214;
                                 font-family: Montserrat;
@@ -567,7 +836,7 @@
                                 line-height: 24px; /* 171.429% */
                                 padding: 24px 14px;
                                 display: flex;
-    
+
                                 &.dropdown {
                                     width: 100%;
                                     display: flex;
@@ -603,7 +872,7 @@
                                 li {
                                     border-bottom: 1px solid #EAEBF0;
                                     background: #FAFBFC;
-                                    
+
                                     a {
                                         width: 100%;
                                         padding: 24px 14px;
@@ -615,7 +884,7 @@
                                         font-style: normal;
                                         font-weight: 400;
                                         line-height: 15px; /* 107.143% */
-    
+
                                         &::after {
                                             content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M6.95539 4.65899L11.5923 9.00015L6.95539 13.3413' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
                                             display: block;
@@ -636,13 +905,13 @@
                                         left: -2100px;
                                         z-index: 3;
                                         overflow-y: scroll;
-    
-    
+
+
                                         &.active {
                                             transition: .5s ease;
                                             left: 0;
                                         }
-    
+
                                         p{
                                             width: 100%;
                                             padding: 24px 14px;
@@ -650,7 +919,7 @@
                                             gap: 8px;
                                             background-color: #FFF;
                                             cursor: pointer;
-    
+
                                             &:before {
                                                 content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M11.5922 13.341L6.95532 8.99985L11.5922 4.65869' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
                                                 display: block;
@@ -663,7 +932,7 @@
                                                     content: initial;
                                                     }
                                                 }
-    
+
                                             }
                                         }
                                     }
@@ -675,7 +944,7 @@
                         margin-top: auto;
                         padding: 35px 24px 65px;
                         border-top: 1px solid #EAEBF0;
-    
+
                         span {
                             display: flex;
                             align-items: center;
@@ -740,7 +1009,7 @@
                                 position: relative;
                                 display: flex;
                                 gap: 6px;
-    
+
                                 &::before {
                                     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M15.75 7.5C15.75 12.75 9 17.25 9 17.25C9 17.25 2.25 12.75 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5Z' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 9.75C10.2426 9.75 11.25 8.74264 11.25 7.5C11.25 6.25736 10.2426 5.25 9 5.25C7.75736 5.25 6.75 6.25736 6.75 7.5C6.75 8.74264 7.75736 9.75 9 9.75Z' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
                                     display: block;
@@ -760,7 +1029,7 @@
                                     display: block;
                                 }
                             }
-    
+
                         }
                         .time {
                             color: #131214;
@@ -773,7 +1042,7 @@
                             display: flex;
                             gap: 6px;
                             margin-top: 23px;
-    
+
                             &::before {
                                 content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_1235_783)'%3E%3Cpath d='M9 5.46428V9L10.7679 10.7679M17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9Z' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1235_783'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
                                 display: block;
@@ -797,7 +1066,7 @@
                         }
                     }
                 }
-                
+
             }
         }
     }

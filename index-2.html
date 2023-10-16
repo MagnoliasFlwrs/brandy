@@ -1,0 +1,2343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/styles/main-page.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="modal-contact">
+        <div class="modal-head">
+            <span class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 20.5L3 2.5M21.0001 2.5L3 20.5001" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </span>
+        </div>
+        <div class="modal-body">
+            <div class="text">
+                <h3>Просто напишите ваш телефон, мы перезвоним</h3>
+                <p>Наш менеджер перезвонит вам в ближайшее время</p>
+            </div>
+
+            <form>
+                <input type="tel" class="modal-contact-tel">
+                <button type="submit">Заказать звонок</button>
+                <p>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных, как это описано в <a href="#">«Соглашении об использовании сайта»</a></p>
+            </form>
+        </div>
+
+    </div>
+    <div class="attention">
+        <div class="content">
+            <p>Цены на сайте носят исключительно информационный характер и могут отличаться от действительных отпускных цен.</p>
+            <span class="attention-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                    <path d="M13.918 4.5L4.91797 13.5M4.91797 4.5L13.918 13.5" stroke="#828282" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header-pc">
+            <div class="contacts-row">
+                <div class="content">
+                    <div class="contacts-row-col">
+                        <div class="select-wrap">
+                            <div class="select header-location">
+                                <p data-current="0">г. Минск, ул. Московская, 22-14 (офис 302)</p>
+                            </div>
+                            <ul class="select-list">
+                                <li data-value="0">г. Минск, ул. Московская, 22-14 (офис 302)</li>
+                                <li data-value="1">г. Минск, ул. Тростенецкая, д. 5/16</li>
+                            </ul>
+                        </div>
+                        <p class="time">с 9:00 до 18:00</p>
+                        <a href="mailto:info@brandy.by" class="mail">info@brandy.by</a>
+                    </div>
+                    <div class="contacts-row-col">
+                        <div class="select-wrap">
+                            <div class="select header-phones">
+                                <p data-current="0">+375 (29) 350-07-35</p>
+                            </div>
+                            <ul class="select-list">
+                                <li data-value="0">+375 (29) 350-07-35</li>
+                                <li data-value="1">+375 (17) 355-07-72</li>
+                            </ul>
+                        </div>
+                        <a class="callme" href="#">Заказать звонок</a>
+                        <div class="select-wrap">
+                            <div class="select header-lang">
+                                <p data-current="0">BYN</p>
+                            </div>
+                            <ul class="select-list">
+                                <li data-value="0">BYN</li>
+                                <li data-value="1">RUB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-row">
+                <div class="content">
+                    <a href="/" class="logo">
+                        <img src="./src/assets/images/logo.png" alt="logo">
+                    </a>
+                    <div class="search-wrapper">
+                        <div class="input-wrapper">
+                            <input class="search-input" type="text" placeholder="Поиск по товарам...">
+                            <div class="search-btns">
+                                <button type="button" class="params">
+                                    Параметры
+                                </button>
+                                <button type="submit" class="search-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                        <path d="M21.33 21L16.98 16.65M19.33 11C19.33 15.4183 15.7482 19 11.33 19C6.91168 19 3.32996 15.4183 3.32996 11C3.32996 6.58172 6.91168 3 11.33 3C15.7482 3 19.33 6.58172 19.33 11Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="params-panel">
+                            <div class="select-wrap">
+                                <div class="select color-select">
+                                    <p data-current="0">Цвет</p>
+                                </div>
+                                <ul class="select-list">
+                                    <li data-value="1">Черный</li>
+                                    <li data-value="2">Красный</li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="Цена, от">
+                            <input type="text" placeholder="Цена, до">
+                        </div>
+                        <ul class="results">
+                            <li>
+                                <img src="./src/assets/images/main-page/card-bg.png" alt="product-img">
+                                <p>Ежедневник Portobello Trend, Sky, недатированный...</p>
+                            </li>
+                            <li>
+                                <img src="./src/assets/images/main-page/card-bg.png" alt="product-img">
+                                <p>Ежедневник Portobello Trend, Sky, недатированный...</p>
+                            </li>
+                            <li>
+                                <img src="./src/assets/images/main-page/card-bg.png" alt="product-img">
+                                <p>Ежедневник Portobello Trend, Sky, недатированный...</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <a  href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M20.83 21V19C20.83 17.9391 20.4085 16.9217 19.6584 16.1716C18.9082 15.4214 17.8908 15 16.83 15H8.82996C7.76909 15 6.75167 15.4214 6.00153 16.1716C5.25138 16.9217 4.82996 17.9391 4.82996 19V21" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.83 11C15.0391 11 16.83 9.20914 16.83 7C16.83 4.79086 15.0391 3 12.83 3C10.6208 3 8.82996 4.79086 8.82996 7C8.82996 9.20914 10.6208 11 12.83 11Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Войти
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <g clip-path="url(#clip0_539_4193)">
+                                  <path d="M1.82996 1H5.82996L8.50996 14.39C8.6014 14.8504 8.85186 15.264 9.2175 15.5583C9.58314 15.8526 10.0407 16.009 10.51 16H20.23C20.6993 16.009 21.1568 15.8526 21.5224 15.5583C21.888 15.264 22.1385 14.8504 22.23 14.39L23.83 6H6.82996M10.83 21C10.83 21.5523 10.3822 22 9.82996 22C9.27767 22 8.82996 21.5523 8.82996 21C8.82996 20.4477 9.27767 20 9.82996 20C10.3822 20 10.83 20.4477 10.83 21ZM21.83 21C21.83 21.5523 21.3822 22 20.83 22C20.2777 22 19.83 21.5523 19.83 21C19.83 20.4477 20.2777 20 20.83 20C21.3822 20 21.83 20.4477 21.83 21Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_539_4193">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.829956)"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              Корзина
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-block">
+                <div class="content">
+                    <nav class="navigation">
+                        <div class="navigation-catalog">
+                            <span class="catalog open-catalog-popup">Каталог</span>
+                            <div class="catalog-popup">
+                                <ul class=" catalog-tabs-panel">
+                                    <li class="catalog-dropright active" data-num="0" ><a href="#">Ручки</a></li>
+                                    <li class="catalog-dropright" data-num="1"><a href="#">Ежедневники под
+                                        нанесение логотипа</a></li>
+                                    <li class="catalog-dropright" data-num="2"><a href="#">Подарочные наборы</a></li>
+                                    <li class="catalog-dropright" data-num="3"><a href="#">IT-сфера</a></li>
+                                    <li class="catalog-dropright" data-num="4"><a href="#">Товары для
+                                        здоровья и красоты</a></li>
+                                    <li class="catalog-dropright" data-num="5"><a href="#">Электроника</a></li>
+                                    <li class="catalog-dropright" data-num="6"><a href="#">Промо-сувениры</a></li>
+                                    <li class="catalog-dropright" data-num="7"><a href="#">Текстильная продукция</a></li>
+                                    <li class="catalog-dropright" data-num="8"><a href="#">Сумки и рюкзаки</a></li>
+                                    <li class="catalog-dropright" data-num="9"><a href="#">Подарочные наборы</a></li>
+                                    <li class="catalog-dropright" data-num="10"><a href="#">IT-сфера</a></li>
+                                    <li class="catalog-dropright" data-num="11"><a href="#">Товары для
+                                        здоровья и красоты</a></li>
+                                </ul>
+                                <div class="catalog-item-content">
+                                    <div class=" catalog-tab-container">
+                                        <div data-num="0" class="tab-content active">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">Ручки UMA</a></li>
+                                                    <li><a href="#">Ручки Mypen</a></li>
+                                                    <li><a href="#">Ручки Portobello</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="1" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/2_book_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">Ручки UMA</a></li>
+                                                    <li><a href="#">Ручки Mypen</a></li>
+                                                    <li><a href="#">Ручки Portobello</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="2" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/4_book_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">Ручки UMA</a></li>
+                                                    <li><a href="#">Ручки Mypen</a></li>
+                                                    <li><a href="#">Ручки Portobello</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                    <li><a href="#">Ручки Senator</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="3" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="4" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/6image.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="5" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="6" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="7" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="8" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="9" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="10" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-num="11" class="tab-content">
+                                            <div class="catalog-submenu">
+                                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                                <ul>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                    <li><a href="#">item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Маркетинговая поддержка</a></li>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">На складе в Минске</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <div class="content">
+                <div class="header-mobile-wrap">
+                    <span class="burger-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_947_8898)">
+                              <line x1="5.97003" y1="6.25" x2="19.5191" y2="6.25" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round"/>
+                              <line x1="5.96997" y1="11.25" x2="19.519" y2="11.25" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round"/>
+                              <line x1="5.96997" y1="16.25" x2="19.519" y2="16.25" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_947_8898">
+                                <rect width="24" height="24" fill="white" transform="translate(0.744568)"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                    </span>
+                    <a href="tel:+37500000000">
+                        <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" d="M0.372559 21C0.372559 32.598 9.77458 42 21.3726 42C32.9705 42 42.3726 32.598 42.3726 21C42.3726 9.40202 32.9705 0 21.3726 0C9.77458 0 0.372559 9.40202 0.372559 21Z" fill="#FF4C00"/>
+                            <path d="M21.3726 36.3736C12.882 36.3736 5.99896 29.4906 5.99896 21C5.99896 12.5094 12.882 5.6264 21.3726 5.6264C29.8632 5.6264 36.7462 12.5094 36.7462 21C36.7462 29.4906 29.8632 36.3736 21.3726 36.3736Z" fill="#FF4C00" stroke="#FF4C00" stroke-width="1.2528"/>
+                            <path d="M28.9761 24.8776V27.1276C28.977 27.3364 28.9342 27.5432 28.8505 27.7346C28.7668 27.926 28.6441 28.0978 28.4902 28.239C28.3363 28.3802 28.1546 28.4877 27.9567 28.5546C27.7588 28.6215 27.5492 28.6464 27.3411 28.6276C25.0333 28.3768 22.8164 27.5882 20.8686 26.3251C19.0565 25.1736 17.5201 23.6372 16.3686 21.8251C15.1011 19.8685 14.3123 17.6408 14.0661 15.3226C14.0474 15.1152 14.0721 14.9061 14.1385 14.7088C14.205 14.5114 14.3118 14.3301 14.4522 14.1763C14.5926 14.0225 14.7635 13.8996 14.954 13.8155C15.1445 13.7313 15.3504 13.6878 15.5586 13.6876H17.8086C18.1726 13.684 18.5255 13.8129 18.8015 14.0502C19.0774 14.2876 19.2577 14.6172 19.3086 14.9776C19.4036 15.6976 19.5797 16.4046 19.8336 17.0851C19.9346 17.3535 19.9564 17.6453 19.8966 17.9257C19.8368 18.2062 19.6978 18.4637 19.4961 18.6676L18.5436 19.6201C19.6113 21.4977 21.166 23.0524 23.0436 24.1201L23.9961 23.1676C24.2001 22.9659 24.4575 22.827 24.738 22.7671C25.0185 22.7073 25.3102 22.7292 25.5786 22.8301C26.2591 23.084 26.9661 23.2601 27.6861 23.3551C28.0505 23.4065 28.3832 23.59 28.621 23.8707C28.8589 24.1514 28.9853 24.5098 28.9761 24.8776Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                    </a>
+                    <a href="/" class="logo">
+                        <img src="./src/assets/images/logo.png" alt="logo" width="91" height="24">
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <g clip-path="url(#clip0_947_8909)">
+                              <path d="M1.47681 1.25H5.47681L8.15681 14.64C8.24825 15.1004 8.49872 15.514 8.86435 15.8083C9.22999 16.1026 9.6875 16.259 10.1568 16.25H19.8768C20.3461 16.259 20.8036 16.1026 21.1693 15.8083C21.5349 15.514 21.7854 15.1004 21.8768 14.64L23.4768 6.25H6.47681M10.4768 21.25C10.4768 21.8023 10.0291 22.25 9.47681 22.25C8.92452 22.25 8.47681 21.8023 8.47681 21.25C8.47681 20.6977 8.92452 20.25 9.47681 20.25C10.0291 20.25 10.4768 20.6977 10.4768 21.25ZM21.4768 21.25C21.4768 21.8023 21.0291 22.25 20.4768 22.25C19.9245 22.25 19.4768 21.8023 19.4768 21.25C19.4768 20.6977 19.9245 20.25 20.4768 20.25C21.0291 20.25 21.4768 20.6977 21.4768 21.25Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_947_8909">
+                                <rect width="24" height="24" fill="white" transform="translate(0.476807 0.25)"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="cart-counter">45</span>
+                    </a>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-head">
+                        <span class="burger-close-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <g clip-path="url(#clip0_917_5080)">
+                                  <path d="M5.24463 19.5L12.7447 12M12.7447 12L20.2446 4.5M12.7447 12L5.24463 4.5M12.7447 12L20.2446 19.5" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_917_5080">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.744629)"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </span>
+                        <a href="tel:+37500000000">
+                            <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M0.372559 21C0.372559 32.598 9.77458 42 21.3726 42C32.9705 42 42.3726 32.598 42.3726 21C42.3726 9.40202 32.9705 0 21.3726 0C9.77458 0 0.372559 9.40202 0.372559 21Z" fill="#FF4C00"/>
+                                <path d="M21.3726 36.3736C12.882 36.3736 5.99896 29.4906 5.99896 21C5.99896 12.5094 12.882 5.6264 21.3726 5.6264C29.8632 5.6264 36.7462 12.5094 36.7462 21C36.7462 29.4906 29.8632 36.3736 21.3726 36.3736Z" fill="#FF4C00" stroke="#FF4C00" stroke-width="1.2528"/>
+                                <path d="M28.9761 24.8776V27.1276C28.977 27.3364 28.9342 27.5432 28.8505 27.7346C28.7668 27.926 28.6441 28.0978 28.4902 28.239C28.3363 28.3802 28.1546 28.4877 27.9567 28.5546C27.7588 28.6215 27.5492 28.6464 27.3411 28.6276C25.0333 28.3768 22.8164 27.5882 20.8686 26.3251C19.0565 25.1736 17.5201 23.6372 16.3686 21.8251C15.1011 19.8685 14.3123 17.6408 14.0661 15.3226C14.0474 15.1152 14.0721 14.9061 14.1385 14.7088C14.205 14.5114 14.3118 14.3301 14.4522 14.1763C14.5926 14.0225 14.7635 13.8996 14.954 13.8155C15.1445 13.7313 15.3504 13.6878 15.5586 13.6876H17.8086C18.1726 13.684 18.5255 13.8129 18.8015 14.0502C19.0774 14.2876 19.2577 14.6172 19.3086 14.9776C19.4036 15.6976 19.5797 16.4046 19.8336 17.0851C19.9346 17.3535 19.9564 17.6453 19.8966 17.9257C19.8368 18.2062 19.6978 18.4637 19.4961 18.6676L18.5436 19.6201C19.6113 21.4977 21.166 23.0524 23.0436 24.1201L23.9961 23.1676C24.2001 22.9659 24.4575 22.827 24.738 22.7671C25.0185 22.7073 25.3102 22.7292 25.5786 22.8301C26.2591 23.084 26.9661 23.2601 27.6861 23.3551C28.0505 23.4065 28.3832 23.59 28.621 23.8707C28.8589 24.1514 28.9853 24.5098 28.9761 24.8776Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                        </a>
+                        <a href="/" class="logo">
+                            <img src="./src/assets/images/logo.png" alt="logo" width="91" height="24">
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <g clip-path="url(#clip0_947_8909)">
+                                  <path d="M1.47681 1.25H5.47681L8.15681 14.64C8.24825 15.1004 8.49872 15.514 8.86435 15.8083C9.22999 16.1026 9.6875 16.259 10.1568 16.25H19.8768C20.3461 16.259 20.8036 16.1026 21.1693 15.8083C21.5349 15.514 21.7854 15.1004 21.8768 14.64L23.4768 6.25H6.47681M10.4768 21.25C10.4768 21.8023 10.0291 22.25 9.47681 22.25C8.92452 22.25 8.47681 21.8023 8.47681 21.25C8.47681 20.6977 8.92452 20.25 9.47681 20.25C10.0291 20.25 10.4768 20.6977 10.4768 21.25ZM21.4768 21.25C21.4768 21.8023 21.0291 22.25 20.4768 22.25C19.9245 22.25 19.4768 21.8023 19.4768 21.25C19.4768 20.6977 19.9245 20.25 20.4768 20.25C21.0291 20.25 21.4768 20.6977 21.4768 21.25Z" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_947_8909">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.476807 0.25)"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <span class="cart-counter">45</span>
+                        </a>
+                    </div>
+                    <div class="mobile-body-inner">
+                        <ul class="mobile-body">
+                            <li>
+                                <a class="dropdown" href="#">Каталог</a>
+                                <ul class="dropdown-list">
+                                    <li class="dropright">
+                                        <a href="#">Ручки</a>
+                                        <div class="dropright-screen ">
+                                            <p class="back">Назад</p>
+                                            <ul>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                                <li><a href="#">Ручки Mypen</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropright">
+                                         <a href="#">Ежедневники под нанесение логотипа</a>
+                                         <div class="dropright-screen ">
+                                            <p class="back">Назад</p>
+                                            <ul>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                                <li><a href="#">Ежедневники под нанесение логотипа</a></li>
+                                            </ul>
+                                        </div>
+                                        </li>
+                                    <li class="dropright">
+                                        <a href="#">Подарочные наборы</a>
+                                        <div class="dropright-screen ">
+                                            <p class="back">Назад</p>
+                                            <ul>
+                                                <li><a href="#">Подарочные наборы</a></li>
+                                            <li><a href="#">Подарочные наборы</a></li>
+                                            <li><a href="#">Подарочные наборы</a></li>
+                                            <li><a href="#">Подарочные наборы</a></li>
+                                            <li><a href="#">Подарочные наборы</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropright">
+                                         <a href="#">IT-сфера</a>
+                                         <div class="dropright-screen ">
+                                            <p class="back">Назад</p>
+                                            <ul>
+                                                <li><a href="#">IT-сфера</a></li>
+                                                <li><a href="#">IT-сфера</a></li>
+                                                <li><a href="#">IT-сфера</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="dropright"> <a href="#">Товары для здоровья и красоты</a></li>
+                                    <li class="dropright"> <a href="#">Электроника</a></li>
+                                    <li class="dropright"> <a href="#">Промо-сувениры</a></li>
+                                    <li class="dropright"> <a href="#">Текстильная продукция</a></li>
+                                    <li class="dropright"> <a href="#">Сумки и рюкзаки</a></li>
+                                    <li class="dropright"> <a href="#">Сумки и рюкзаки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Маркетинговая поддержка</a></li>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">На складе в Минске</a></li>
+                        </ul>
+                        <div class="mobile-contacts">
+                            <span>Заказать звонок</span>
+                            <div class="select-wrap lang-wrap">
+                                <div class="select header-lang">
+                                    <p data-current="0">BYN</p>
+                                </div>
+                                <ul class="select-list">
+                                    <li data-value="0">BYN</li>
+                                    <li data-value="1">RUB</li>
+                                </ul>
+                            </div>
+                            <div class="select-wrap">
+                                <div class="select header-location">
+                                    <p data-current="0">г. Минск, ул. Московская, 22-14 (офис 302)</p>
+                                </div>
+                                <ul class="select-list">
+                                    <li data-value="0">г. Минск, ул. Московская, 22-14 (офис 302)</li>
+                                    <li data-value="1">г. Минск, ул. Тростенецкая, д. 5/16</li>
+                                </ul>
+                            </div>
+                            <p class="time">с 9:00 до 18:00</p>
+                            <a href="mailto:info@brandy.by" class="mail">info@brandy.by</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="head-block">
+            <div class="content">
+                <div class="head-block-row">
+                    <div class="promo-catalog">
+                        <div class="swiper promo-swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <picture>
+                                    <source media="(max-width:1024px)" srcset="./src/assets/images/main-page/Hero.png">
+                                    <source media="(min-width:1024px)" srcset="./src/assets/images/main-page/banner.png">
+                                    <img src="./src/assets/images/main-page/banner.png" alt="slide-img" style="width:auto;">
+                                </picture>
+                                <div class="slide-content">
+                                    <p>Ежедневники</p>
+                                    <h2>Portobello Trend</h2>
+                                    <p>Яркие, оригинальные, стильные</p>
+                                    <a class="blue-btn" href="#">Заказать</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture>
+                                    <source media="(max-width:1024px)" srcset="./src/assets/images/main-page/Hero.png">
+                                    <source media="(min-width:1024px)" srcset="./src/assets/images/main-page/banner.png">
+                                    <img src="./src/assets/images/main-page/banner.png" alt="slide-img" style="width:auto;">
+                                </picture>
+                                <div class="slide-content">
+                                    <p>Ежедневники</p>
+                                    <h2>Portobello Trend 2</h2>
+                                    <p>Яркие, оригинальные, стильные</p>
+                                    <a class="blue-btn" href="#">Заказать</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture>
+                                    <source media="(max-width:1024px)" srcset="./src/assets/images/main-page/Hero.png">
+                                    <source media="(min-width:1024px)" srcset="./src/assets/images/main-page/banner.png">
+                                    <img src="./src/assets/images/main-page/banner.png" alt="slide-img" style="width:auto;">
+                                </picture>
+                                <div class="slide-content">
+                                    <p>Ежедневники</p>
+                                    <h2>Portobello Trend 2</h2>
+                                    <p>Яркие, оригинальные, стильные</p>
+                                    <a class="blue-btn" href="#">Заказать</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture>
+                                    <source media="(max-width:1024px)" srcset="./src/assets/images/main-page/Hero.png">
+                                    <source media="(min-width:1024px)" srcset="./src/assets/images/main-page/banner.png">
+                                    <img src="./src/assets/images/main-page/banner.png" alt="slide-img" style="width:auto;">
+                                </picture>
+                                <div class="slide-content">
+                                    <p>Ежедневники</p>
+                                    <h2>Portobello Trend 3</h2>
+                                    <p>Яркие, оригинальные, стильные</p>
+                                    <a class="blue-btn" href="#">Заказать</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                    </div>
+                </div>
+                <div class="category-links">
+                    <a href="#">
+                        <img src="./src/assets/images/main-page/1.png" alt="category-image" width="48" height="48">
+                        <p>Продукция для IT компаний</p>
+                    </a>
+                    <a href="#">
+                        <img src="./src/assets/images/main-page/2.png" alt="category-image" width="48" height="48">
+                        <p>Новинки</p>
+                    </a>
+                    <a href="#">
+                        <img src="./src/assets/images/main-page/3.png" alt="category-image" width="48" height="48">
+                        <p>Эко продукция</p>
+                    </a>
+                    <a href="#">
+                        <img src="./src/assets/images/main-page/4.png" alt="category-image" width="48" height="48">
+                        <p>Сувениры к праздникам</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-block">
+            <div class="content">
+                <div class="catalog-head">
+                    <h2>Каталог</h2>
+                    <a href="#">Перейти в каталог</a>
+                </div>
+                <div class="catalog-head-mobile">
+                    <h2>Каталог</h2>
+                    <div class="sort">
+                        <span class="active">Все</span>
+                        <span>Новинки</span>
+                        <span>Бренды</span>
+                        <span>Товары со скидкой </span>
+                        <span>На складе в Минске</span>
+                    </div>
+                    <a href="#">Перейти в каталог</a>
+                </div>
+                <div class="sort">
+                    <span>Новинки</span>
+                    <div class="select-wrap">
+                        <div class="select ">
+                            <p data-current="0">Бренды</p>
+                        </div>
+                        <ul class="select-list">
+                            <li data-value="1">Бренды 1</li>
+                            <li data-value="2">Бренды 2</li>
+                        </ul>
+                    </div>
+                    <span>На складе в Минске</span>
+                </div>
+                <ul class="catalog-category">
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Ручки</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Ручки UMA</a></li>
+                                        <li><a href="#">Ручки Mypen</a></li>
+                                        <li><a href="#">Ручки Portobello</a></li>
+                                        <li><a href="#">Ручки Senator</a></li>
+                                        <li><a href="#">Ручки UMA</a></li>
+                                        <li><a href="#">Ручки Mypen</a></li>
+                                        <li><a href="#">Ручки Portobello</a></li>
+                                        <li><a href="#">Ручки Senator</a></li>
+
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/2_book_brandy 1.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Ежедневники под нанесение логотипа</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Ежедневники Portobello</a></li>
+                                        <li><a href="#">Классические</a></li>
+                                        <li><a href="#">Планинги</a></li>
+                                        <li><a href="#">Ежедневники Bruno Visconti</a></li>
+                                        <li><a href="#">Классические</a></li>
+                                        <li><a href="#">Планинги</a></li>
+                                        <li><a href="#">Ежедневники Bruno Visconti</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/3image.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Подарочные наборы</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Корпоративные наборы</a></li>
+                                        <li><a href="#">Подарочные наборы</a></li>
+                                        <li><a href="#">Наборы с ежедневниками</a></li>
+                                        <li><a href="#">Подарочная упаковка</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/4_book_brandy 1.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Товары для здоровья и красоты</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Товары для защиты здоровья</a></li>
+                                        <li><a href="#">Полотенца</a></li>
+                                        <li><a href="#">Косметички, несессеры</a></li>
+                                        <li><a href="#">Зеркальца</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/5.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Электроника</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Внешние аккумуляторы</a></li>
+                                        <li><a href="#">Зарядные устройства</a></li>
+                                        <li><a href="#">Лампы и светильники</a></li>
+                                        <li><a href="#">Наушники</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/6image.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Промо-сувениры</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Антистрессы</a></li>
+                                        <li><a href="#">Брелоки</a></li>
+                                        <li><a href="#">Ланъярды, держатели</a></li>
+                                        <li><a href="#">Наградная продукция</a></li>
+                                        <li><a href="#">Ланъярды, держатели</a></li>
+                                        <li><a href="#">Наградная продукция</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/7.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Текстильная продукция</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Аксессуары</a></li>
+                                        <li><a href="#">Бейсболки (Кепки)</a></li>
+                                        <li><a href="#">Носки кастомизированные</a></li>
+                                        <li><a href="#">Одежда Portobello</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                        <li><a href="#">Бейсболки (Кепки)</a></li>
+                                        <li><a href="#">Носки кастомизированные</a></li>
+                                        <li><a href="#">Одежда Portobello</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                        <li><a href="#">Бейсболки (Кепки)</a></li>
+                                        <li><a href="#">Носки кастомизированные</a></li>
+                                        <li><a href="#">Одежда Portobello</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/8.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Сумки и рюкзаки</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Рюкзаки HALFAR</a></li>
+                                        <li><a href="#">Рюкзаки премиум</a></li>
+                                        <li><a href="#">Рюкзаки промо</a></li>
+                                        <li><a href="#">Сумки для документов</a></li>
+                                        <li><a href="#">Рюкзаки HALFAR</a></li>
+                                        <li><a href="#">Рюкзаки премиум</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/9image.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Товары для дома и отдыха</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Автомобильные аксессуары</a></li>
+                                        <li><a href="#">Игры и головоломки</a></li>
+                                        <li><a href="#">Кухонные принадлежности</a></li>
+                                        <li><a href="#">Декор</a></li>
+                                        <li><a href="#">Автомобильные аксессуары</a></li>
+                                        <li><a href="#">Игры и головоломки</a></li>
+                                        <li><a href="#">Кухонные принадлежности</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/1_pen_brandy 1.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Ручки</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Ручки UMA</a></li>
+                                        <li><a href="#">Ручки Mypen</a></li>
+                                        <li><a href="#">Ручки Portobello</a></li>
+                                        <li><a href="#">Ручки Senator</a></li>
+                                        <li><a href="#">Ручки UMA</a></li>
+                                        <li><a href="#">Ручки Mypen</a></li>
+                                        <li><a href="#">Ручки Portobello</a></li>
+                                        <li><a href="#">Ручки Senator</a></li>
+
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/2_book_brandy 1.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Ежедневники под нанесение логотипа</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Ежедневники Portobello</a></li>
+                                        <li><a href="#">Классические</a></li>
+                                        <li><a href="#">Планинги</a></li>
+                                        <li><a href="#">Ежедневники Bruno Visconti</a></li>
+                                        <li><a href="#">Классические</a></li>
+                                        <li><a href="#">Планинги</a></li>
+                                        <li><a href="#">Ежедневники Bruno Visconti</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/3image.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Подарочные наборы</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Корпоративные наборы</a></li>
+                                        <li><a href="#">Подарочные наборы</a></li>
+                                        <li><a href="#">Наборы с ежедневниками</a></li>
+                                        <li><a href="#">Подарочная упаковка</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog-item">
+                        <div class="category-card-wrapper">
+                            <div class="category-card">
+                                <img src="./src/assets/images/main-page/4_book_brandy 1.png" alt="category-image" width="85" height="85">
+                                <div class="card-content">
+                                    <p class="card-title">Товары для здоровья и красоты</p>
+                                    <ul class="category-items">
+                                        <li><a href="#">Товары для защиты здоровья</a></li>
+                                        <li><a href="#">Полотенца</a></li>
+                                        <li><a href="#">Косметички, несессеры</a></li>
+                                        <li><a href="#">Зеркальца</a></li>
+                                    </ul>
+                                    <p class="show-hide-list"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <p class="show-more-btn"><span class="show-more">Показать еще</span> <span class="count">9</span></p>
+            </div>
+        </div>
+        <div class="product-tabs-inner">
+            <div class="content">
+                <ul class="tabs-panel">
+                    <li data-num="0" class="active">Популярные товары</li>
+                    <li data-num="1">Новинки</li>
+                </ul>
+                <div class="tab-container">
+                    <div data-num="0" class="tab-content active">
+                        <div class="swiper-container">
+                            <div class="products-btn-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                                    <g clip-path="url(#clip0_934_6390)">
+                                      <path d="M19.84 21.8418L14.0109 16L19.84 10.1582L18.0455 8.36365L10.4091 16L18.0455 23.6364L19.84 21.8418Z" fill="#0464EC"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_934_6390">
+                                        <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.227295 0.727295)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </div>
+                            <div class="swiper products-tab-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock instock">
+                                                      На складе в Минске: от 82
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock not-in-stock">
+                                                    Нет в наличии
+                                                </span>
+                                                <!-- <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock remote">
+                                                    На удаленном складе: от 2 001
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock instock">
+                                                      На складе в Минске: от 82
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock not-in-stock">
+                                                    Нет в наличии
+                                                </span>
+                                                <!-- <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock remote">
+                                                    На удаленном складе: от 2 001
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock instock">
+                                                      На складе в Минске: от 82
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock not-in-stock">
+                                                    Нет в наличии
+                                                </span>
+                                                <!-- <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock remote">
+                                                    На удаленном складе: от 2 001
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-btn-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                                    <g clip-path="url(#clip0_934_6385)">
+                                      <path d="M11.16 21.8418L16.9891 16L11.16 10.1582L12.9546 8.36365L20.5909 16L12.9546 23.6364L11.16 21.8418Z" fill="#0464EC"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_934_6385">
+                                        <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.227295 0.727295)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </div>
+                        </div>
+                        <a href="#" class="observe">Смотреть все</a>
+
+                    </div>
+                    <div data-num="1" class="tab-content ">
+                        <div class="swiper-container">
+                            <div class="products-btn-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                                    <g clip-path="url(#clip0_934_6390)">
+                                      <path d="M19.84 21.8418L14.0109 16L19.84 10.1582L18.0455 8.36365L10.4091 16L18.0455 23.6364L19.84 21.8418Z" fill="#0464EC"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_934_6390">
+                                        <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.227295 0.727295)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </div>
+                            <div class="swiper products-tab-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock instock">
+                                                      На складе в Минске: от 82
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock not-in-stock">
+                                                    Нет в наличии
+                                                </span>
+                                                <!-- <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock remote">
+                                                    На удаленном складе: от 2 001
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock instock">
+                                                      На складе в Минске: от 82
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock not-in-stock">
+                                                    Нет в наличии
+                                                </span>
+                                                <!-- <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock remote">
+                                                    На удаленном складе: от 2 001
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock instock">
+                                                      На складе в Минске: от 82
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock not-in-stock">
+                                                    Нет в наличии
+                                                </span>
+                                                <!-- <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card-inner">
+                                            <div class="product-card">
+                                                <div class="gallery">
+                                                    <div class="images">
+                                                        <img class="active" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg.png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image">
+                                                        <img  src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image">
+                                                        <img src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image">
+                                                        <div class="labels">
+                                                            <span class="new-label">Новинка</span>
+                                                            <span class="on-sale">Скидки</span>
+                                                            <span class="eco">ECO</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="thumbs-inner">
+                                                        <ul class="thumbs">
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (3).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (4).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/card-bg.png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (1).png" alt="gallery-image"></li>
+                                                            <li><img class="mini-img" src="./src/assets/images/main-page/product/bg (2).png" alt="gallery-image"></li>
+                                                        </ul>
+                                                        <p class="thumb-count">+ <span></span></p>
+                                                    </div>
+
+                                                </div>
+                                                <p class="card-title">Рюкзак-ролл для ноутбука FASHION</p>
+                                                <span class="stock remote">
+                                                    На удаленном складе: от 2 001
+                                                </span>
+                                                <div class="price">
+                                                    <p class="actual-price">78.36 BYN</p>
+                                                    <span class="discount">0.60 BYN</span>
+                                                </div>
+                                                <a class="hidden-btn" href="#">Посмотреть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-btn-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                                    <g clip-path="url(#clip0_934_6385)">
+                                      <path d="M11.16 21.8418L16.9891 16L11.16 10.1582L12.9546 8.36365L20.5909 16L12.9546 23.6364L11.16 21.8418Z" fill="#0464EC"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_934_6385">
+                                        <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.227295 0.727295)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                            </div>
+                        </div>
+                        <a href="#" class="observe">Смотреть все</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages-block">
+            <div class="content">
+                <div class="advantages-cards">
+                    <div class="advantages-card">
+                        <div class="img-wrap">
+                            <img src="./src/assets/images/main-page/Mask.png" alt="advantage-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Upsilon IT</p>
+                            <p class="description">Забота о новом сотруднике
+                                с первого рабочего дня – это очень важный знак внимания, который нужно вовремя проявить и показать. Эту функцию с легкостью выполняет Welcome Box. Наполнение может быть разным, но цель одна – создать атмосферу дружественности и зарядить на результат.</p>
+                            <a href="#">Читать полностью</a>
+                        </div>
+
+                    </div>
+                    <div class="advantages-card">
+                        <div class="img-wrap">
+                            <img src="./src/assets/images/main-page/Mask (1).png" alt="advantage-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Brandy</p>
+                            <p class="description">Корпоративные подарки для наших любимых клиентов и партнеров.
+                                В наборе:- хит осеннего сезона 20... плед из хлопка и полиэстера
+                                с тиснением на пришивном шевроне- неустанно заряжающий внешний... аккумулятор с креативной уф-печатью- стикерпаки от наших дизайнеров- сладкое угощение – просто космос!... нужно вовремя проявить и показать. Эту функцию с легкостью выполняет Welcome Box. Наполнение может быть разным, но цель одна – создать атмосферу дружественности и зарядить на результат.</p>
+                            <a href="#">Читать полностью</a>
+                        </div>
+                    </div>
+                    <div class="advantages-card">
+                        <div class="img-wrap">
+                            <img src="./src/assets/images/main-page/Mask.png" alt="advantage-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Upsilon IT</p>
+                            <p class="description">Забота о новом сотруднике
+                                с первого рабочего дня – это очень важный знак внимания, который нужно вовремя проявить и показать. Эту функцию с легкостью выполняет Welcome Box. Наполнение может быть разным, но цель одна – создать атмосферу дружественности и зарядить на результат.</p>
+                            <a href="#">Читать полностью</a>
+                        </div>
+
+                    </div>
+                    <div class="advantages-card">
+                        <div class="img-wrap">
+                            <img src="./src/assets/images/main-page/Mask (2).png" alt="advantage-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">KFC</p>
+                            <p class="description">Носки с индивидуальным дизайном – отличный способ, чтобы показать свою фишку подчеркнуть особенность... деятельности компании. Стильный дождевик-ветровка давно вошёл в тренд, как незаменимый аксессуар в дождливый сезон, и пригодится как в походе, так и в городских условиях.</p>
+                            <a href="#">Читать полностью</a>
+                        </div>
+                    </div>
+                    <div class="advantages-card portfolio">
+                        <div class="card-content">
+                            <div class="title">Портфолио</div>
+                            <div class="description">600+ реализованных кейсов наших любимых Клиентов представлено
+                                в портфолио: сувенирная продукция с логотипом компании для выставки или конференции, индивидуальные решения по бизнес-подаркам к Новому году, 8 марта или 23 февраля..
+                                тематические подарки на юбилей компании или профессиональный праздник, промо-продукция и pos-материалы для федеральных акций, корпоративные подарки и мерч для сотрудников. Изучайте! Вдохновляйтесь! Звоните нашим менеджерам! Сделаем для Вас также круто!</div>
+                            <a href="#">Смотреть все</a>
+                        </div>
+
+                    </div>
+                    <div class="advantages-card">
+                        <div class="img-wrap">
+                            <img src="./src/assets/images/main-page/Mask (3).png" alt="advantage-image">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Milavitsa</p>
+                            <p class="description">Плавность линий, визуальная нежность продукции компании Milavitsa передается через мягкое...
+                                и притягательное покрытие soft-touch на поверхностях всех позиций. Такие вещи так и манят прикоснуться, и не хочется выпускать их из рук.
+                                </p>
+                            <a href="#">Читать полностью</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-block">
+            <div class="content">
+                <div class="images-block">
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/about1.png" alt="about-image"></div>
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/about2.png" alt="about-image"></div>
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/about3.png" alt="about-image"></div>
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/about4.png" alt="about-image"></div>
+                </div>
+                <div class="info-block">
+                    <h2>Немного о нас</h2>
+                    <p><span>ООО “Бренди”</span>  - Ваш проводник в мире сувенирной продукции.
+                        Мы на рынке с <span>2010</span>  года и работаем с ведущими европейскими
+                        и российскими каталогами: <span>Portobello, Hiidea, Oasis, Tops, Stan, Xindao, Проект 111, Wenger.</span>  С  <span>2015</span> года являемся постоянным партнером бренда <span>GOODRAM</span>  Польша. Уже <span>6 лет</span>  организуем прямые поставки проверенных рынком шариковых ручек китайского производства. Имеем большой ассортимент продукции на складе <span>в Минcке.</span> </p>
+                    <a href="#">Читать полностью</a>
+                    <div class="advantages">
+                        <div class="item">
+                            <img src="./src/assets/images/main-page/Icon.png" alt="about-icon" width="60" height="60">
+                            <span>индивидуальный<br>
+                                подход</span>
+                        </div>
+                        <div class="item">
+                            <img src="./src/assets/images/main-page/icon2.png" alt="about-icon" width="60" height="60">
+                            <span>Быстрый <br>
+                                результат </span>
+                        </div>
+                        <div class="item">
+                            <img src="./src/assets/images/main-page/icon3.png" alt="about-icon" width="60" height="60">
+                            <span>Свой склад <br>
+                                в Минске </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brands-block">
+            <div class="content">
+                <div class="info-block">
+                    <h2>Бренды</h2>
+                    <p>600+ реализованных кейсов наших любимых Клиентов представлено
+                        в портфолио: сувенирная продукция с логотипом компании для выставки или конференции, индивидуальные решения по бизнес-подаркам к Новому году, 8 марта или 23 февраля тематические подарки на юбилей компании или профессиональный праздник,</p>
+                    <a href="#">Смотреть все</a>
+                </div>
+                <div class="images-block">
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/brands.png" alt="brands-image"></div>
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/brands.png" alt="brands-image"></div>
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/brands.png" alt="brands-image"></div>
+                    <div class="img-wrap"><img src="./src/assets/images/main-page/brands.png" alt="brands-image"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="partners-block">
+            <div class="content">
+                <h2 class="partners-title">Наши
+                    партнеры</h2>
+            </div>
+            <div class="swiper-row">
+                <div class="button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <g clip-path="url(#clip0_933_6304)">
+                          <path d="M20.09 21.6827L14.2609 15.8408L20.09 9.99901L18.2955 8.20447L10.6591 15.8408L18.2955 23.4772L20.09 21.6827Z" fill="#828282"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_933_6304">
+                            <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.477295 0.568115)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </div>
+                <div class="content">
+                    <div class="swiper partners-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand1.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand2.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand3.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand4.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand1.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand2.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand3.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/brand4.png" alt="brand-logo">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <g clip-path="url(#clip0_933_6299)">
+                      <path d="M11.41 21.6827L17.2391 15.8408L11.41 9.99901L13.2046 8.20447L20.8409 15.8408L13.2046 23.4772L11.41 21.6827Z" fill="#131214"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_933_6299">
+                        <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.477295 0.568115)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="block">
+            <div class="content">
+                <div class="swiper-container">
+                    <div class="swiper picture-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/Mask (1).png" alt="image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/Mask (2).png" alt="image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/Mask (3).png" alt="image">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                </div>
+                <div class="text">
+                    <h2>Виды нанесения</h2>
+                    <ul class="info-block">
+                        <li>
+                            <p>Гравировка </p>
+                            <span>нанесение углублённого рисунка, надписи, орнамента, ручным или механическим способом на поверхность металла, камня, дерева, стекла.
+                            </span>
+                        </li>
+                        <li>
+                            <p>Тиснение </p>
+                            <span>полиграфический процесс для получения рельефного изображения на поверхности продукции
+                            </span>
+                        </li>
+                        <li>
+                            <p>УФ-печать </p>
+                            <span>разновидность струйной печати с использованием УФ-отверждаемых чернил, которые застывают под воздействием ультрафиолетового излучения, образуя плёнку на запечатываемом материале.</span>
+                        </li>
+                        <li>
+                            <p>Шелкография </p>
+                            <span>метод воспроизведения как текстов и надписей, так и различных изображений при помощи трафаретной печатной формы, представляющей собой мелкоячеистую сетку, сквозь незакрытые отверстия которой краска переносится на запечатываемую поверхность.</span>
+                        </li>
+                        <li>
+                            <p>УФ-печать </p>
+                            <span>Данные стандарты основаны на наиболее распространенных условиях работы, и разработаны на основе оценки специалистами технических возможностей печати и ручного труда.</span>
+                        </li>
+                        <li>
+                            <p>Гравировка </p>
+                            <span>нанесение углублённого рисунка, надписи, орнамента, ручным или механическим способом на поверхность металла, камня, дерева, стекла.
+                            </span>
+                        </li>
+                        <li>
+                            <p>Тиснение </p>
+                            <span>полиграфический процесс для получения рельефного изображения на поверхности продукции
+                            </span>
+                        </li>
+                        <li>
+                            <p>УФ-печать </p>
+                            <span>разновидность струйной печати с использованием УФ-отверждаемых чернил, которые застывают под воздействием ультрафиолетового излучения, образуя плёнку на запечатываемом материале.</span>
+                        </li>
+                        <li>
+                            <p>Шелкография </p>
+                            <span>метод воспроизведения как текстов и надписей, так и различных изображений при помощи трафаретной печатной формы, представляющей собой мелкоячеистую сетку, сквозь незакрытые отверстия которой краска переносится на запечатываемую поверхность.</span>
+                        </li>
+                        <li>
+                            <p>УФ-печать </p>
+                            <span>Данные стандарты основаны на наиболее распространенных условиях работы, и разработаны на основе оценки специалистами технических возможностей печати и ручного труда.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="customers">
+            <div class="content">
+                <h2>Наши <span>Клиенты</span> – Наша Гордость
+                </h2>
+            </div>
+            <div class="swiper-row">
+                <div class="button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+                        <g clip-path="url(#clip0_934_6379)">
+                          <path d="M20.09 21.342L14.2609 15.5001L20.09 9.65831L18.2955 7.86377L10.6591 15.5001L18.2955 23.1365L20.09 21.342Z" fill="#0464EC"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_934_6379">
+                            <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.477295 0.227295)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </div>
+                <div class="content">
+                    <div class="swiper customers-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer1.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer2.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer3.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer4.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer5.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer1.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer2.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer3.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer4.png" alt="brand-logo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./src/assets/images/main-page/customer5.png" alt="brand-logo">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+                        <g clip-path="url(#clip0_934_6374)">
+                          <path d="M11.41 21.342L17.2391 15.5001L11.41 9.65831L13.2046 7.86377L20.8409 15.5001L13.2046 23.1365L11.41 21.342Z" fill="#0464EC"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_934_6374">
+                            <rect width="30.5455" height="30.5455" fill="white" transform="translate(0.477295 0.227295)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="content">
+                <div class="news-row">
+                    <h2>Новости</h2>
+                    <a href="#">Читать все</a>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card">
+                        <span class="date">11 янв 2023</span>
+                        <p>Акция на DTF-печать</p>
+                        <span class="description">Весна будет яркой! Красочные принты на зонтах...
+                            Весна будет яркой! Красочные принты на зонтах...
+                            Весна будет яркой! Красочные принты на зонтах...
+                        </span>
+                    </div>
+                    <div class="news-card">
+                        <span class="date">08 янв 2023</span>
+                        <p>График работы в праздничные дни</p>
+                        <span class="description">В этом году последний день отгрузки товара со склада...</span>
+                    </div>
+                    <div class="news-card">
+                        <span class="date">23 нояб 2022</span>
+                        <p>Снижение цен на настольные лампы</p>
+                        <span class="description">Теперь цены на настольные лампы - еще ниже...</span>
+                    </div>
+                    <div class="news-card">
+                        <span class="date">14 март 2022</span>
+                        <p>Выбираем сладкие новогодние подарки</p>
+                        <span class="description">С 1994 г. мы создаем вкусные подарки к Новому году...</span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <p>Оставьте заявку и мы <br>
+                        свяжемся с вами</p>
+                    <button class="to-modal">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="content">
+            <div class="footer-desctop">
+                <div class="row">
+                    <div class="col">
+                        <p>Дайджест новостей</p>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Введите Email">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M1 8H15" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 1L15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                            </button>
+                        </div>
+
+                        <div class="social">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                    <path d="M26.454 23.3743L27.0695 19.3946H23.2779V16.8078C23.2779 15.7196 23.8073 14.6563 25.4999 14.6563H27.248V11.2674C26.23 11.1022 25.2014 11.0128 24.1704 11C21.0497 11 19.0124 12.909 19.0124 16.3601V19.3946H15.5532V23.3743H19.0124V33.0001H23.2779V23.3743H26.454Z" fill="white"/>
+                                  </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                    <path d="M18.0054 22.1339C18.0054 19.9223 19.7662 18.129 21.9389 18.129C24.1116 18.129 25.8734 19.9223 25.8734 22.1339C25.8734 24.3455 24.1116 26.1388 21.9389 26.1388C19.7662 26.1388 18.0054 24.3455 18.0054 22.1339ZM15.8785 22.1339C15.8785 25.541 18.5918 28.3029 21.9389 28.3029C25.2861 28.3029 27.9993 25.541 27.9993 22.1339C27.9993 18.7268 25.2861 15.965 21.9389 15.965C18.5918 15.965 15.8785 18.7268 15.8785 22.1339ZM26.823 15.7204C26.8229 16.0055 26.9058 16.2843 27.0613 16.5214C27.2169 16.7586 27.438 16.9434 27.6968 17.0527C27.9555 17.1619 28.2403 17.1905 28.515 17.135C28.7898 17.0795 29.0422 16.9423 29.2403 16.7408C29.4385 16.5392 29.5735 16.2824 29.6282 16.0028C29.683 15.7231 29.6551 15.4333 29.548 15.1698C29.4409 14.9063 29.2594 14.6811 29.0266 14.5226C28.7937 14.3641 28.5199 14.2794 28.2398 14.2793H28.2393C27.8638 14.2795 27.5037 14.4313 27.2382 14.7015C26.9726 14.9717 26.8233 15.3382 26.823 15.7204ZM17.1707 31.9129C16.02 31.8595 15.3946 31.6644 14.979 31.4996C14.4279 31.2812 14.0348 31.0212 13.6214 30.601C13.208 30.1808 12.9522 29.781 12.7386 29.2201C12.5766 28.7972 12.3849 28.1603 12.3326 26.989C12.2754 25.7227 12.2639 25.3423 12.2639 22.134C12.2639 18.9258 12.2763 18.5464 12.3326 17.279C12.385 16.1077 12.5781 15.4721 12.7386 15.048C12.9531 14.4871 13.2086 14.0869 13.6214 13.6661C14.0342 13.2453 14.427 12.9849 14.979 12.7675C15.3944 12.6026 16.02 12.4075 17.1707 12.3542C18.4148 12.296 18.7885 12.2843 21.9389 12.2843C25.0893 12.2843 25.4634 12.2969 26.7085 12.3542C27.8592 12.4075 28.4836 12.6041 28.9003 12.7675C29.4513 12.9849 29.8445 13.2459 30.2579 13.6661C30.6712 14.0863 30.9262 14.4871 31.1407 15.048C31.3027 15.4709 31.4944 16.1077 31.5467 17.279C31.6039 18.5464 31.6153 18.9258 31.6153 22.134C31.6153 25.3423 31.6039 25.7216 31.5467 26.989C31.4943 28.1603 31.3017 28.797 31.1407 29.2201C30.9262 29.781 30.6707 30.1812 30.2579 30.601C29.8451 31.0208 29.4513 31.2812 28.9003 31.4996C28.4849 31.6645 27.8592 31.8596 26.7085 31.9129C25.4645 31.9711 25.0907 31.9828 21.9389 31.9828C18.7871 31.9828 18.4144 31.9711 17.1707 31.9129ZM17.073 10.1929C15.8166 10.2511 14.958 10.4539 14.2082 10.7509C13.4317 11.0576 12.7744 11.469 12.1175 12.1366C11.4606 12.8042 11.0574 13.4744 10.7562 14.2648C10.4644 15.0285 10.2652 15.9019 10.208 17.1809C10.1498 18.4618 10.1365 18.8714 10.1365 22.1339C10.1365 25.3965 10.1498 25.806 10.208 27.087C10.2652 28.366 10.4644 29.2394 10.7562 30.0031C11.0574 30.793 11.4607 31.4639 12.1175 32.1312C12.7743 32.7985 13.4317 33.2094 14.2082 33.517C14.9594 33.8139 15.8166 34.0167 17.073 34.075C18.3321 34.1332 18.7338 34.1477 21.9389 34.1477C25.1441 34.1477 25.5464 34.1342 26.8048 34.075C28.0614 34.0167 28.9194 33.8139 29.6696 33.517C30.4457 33.2094 31.1035 32.7988 31.7604 32.1312C32.4172 31.4637 32.8196 30.793 33.1217 30.0031C33.4135 29.2394 33.6136 28.3659 33.6699 27.087C33.7271 25.8051 33.7404 25.3965 33.7404 22.1339C33.7404 18.8714 33.7271 18.4618 33.6699 17.1809C33.6127 15.9018 33.4135 15.028 33.1217 14.2648C32.8196 13.4749 32.4162 12.8053 31.7604 12.1366C31.1045 11.468 30.4457 11.0576 29.6706 10.7509C28.9194 10.4539 28.0613 10.2502 26.8058 10.1929C25.5474 10.1346 25.145 10.1201 21.9399 10.1201C18.7347 10.1201 18.3321 10.1337 17.073 10.1929Z" fill="white"/>
+                                  </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                                    <path d="M21.3261 11.0736C17.7548 11.4817 14.1961 14.4395 14.0493 18.6645C13.9569 21.2442 14.6724 23.1796 17.0708 23.723C18.1115 21.8435 16.735 21.429 16.521 20.0693C15.6418 14.4974 22.7991 10.6977 26.5445 14.5877C29.1358 17.2812 27.4299 25.5681 23.2502 24.7068C19.2467 23.8841 25.21 17.2877 22.0143 15.9924C19.4166 14.9399 18.036 19.2123 19.2677 21.3345C18.5459 24.9839 16.991 28.4228 17.6205 33.0001C19.6621 31.4837 20.3504 28.5796 20.9148 25.5509C21.9409 26.1889 22.4885 26.8526 23.7978 26.9557C28.6259 27.3381 31.3222 22.0218 30.6634 17.118C30.078 12.7705 25.8394 10.5581 21.3261 11.0736Z" fill="white"/>
+                                  </svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5637 22.1411C34.5637 28.7802 29.1817 34.1622 22.5427 34.1622C15.9036 34.1622 10.5216 28.7802 10.5216 22.1411C10.5216 15.5021 15.9036 10.1201 22.5427 10.1201C29.1817 10.1201 34.5637 15.5021 34.5637 22.1411ZM23.6946 18.4525C21.6294 19.3446 15.6748 21.8778 15.6748 21.8778C14.2637 22.4487 15.0897 22.9839 15.0897 22.9839C15.0897 22.9839 16.2944 23.4121 17.327 23.7332C18.3596 24.0543 18.9103 23.6976 18.9103 23.6976C18.9103 23.6976 21.3197 22.0563 23.7634 20.3079C25.4844 19.0948 25.0714 20.0938 24.6583 20.522C23.7634 21.4497 22.2834 22.9126 21.0443 24.09C20.4936 24.5896 20.7689 25.0177 21.0099 25.2318C21.7106 25.8465 23.361 26.9643 24.1103 27.4718C24.318 27.6124 24.4564 27.7062 24.4863 27.7294C24.6583 27.8722 25.6221 28.5144 26.2073 28.3717C26.7924 28.229 26.8612 27.4083 26.8612 27.4083C26.8612 27.4083 27.3087 24.4825 27.7217 21.8065C27.7982 21.2811 27.8747 20.7667 27.9461 20.287C28.1315 19.0403 28.282 18.0283 28.3068 17.6676C28.4101 16.4544 27.171 16.9539 27.171 16.9539C27.171 16.9539 24.4863 18.0957 23.6946 18.4525Z" fill="white"/>
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Каталог продукции</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Новости</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Сервис</a></li>
+                            <li><a href="#">Оплата и Доставка</a></li>
+                            <li><a href="#">Виды нанесения</a></li>
+                            <li><a href="#">Наша выгрузка</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p>Контакты</p>
+                        <p>220007,
+                            ул. Московская, 22-14 (офис 302)</p>
+                        <a href="tel:+375293500735">+375 (29) 350-07-35</a>
+                        <a href="tel:+375173550772">+375 (17) 355-07-72</a>
+                        <a href="mailto:info@brandy.by">info@brandy.by</a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p>© 2010-2023 «ООО БРЕНДИ» Все права защищены</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mobile">
+            <div class="content">
+                <div class="col">
+                    <p>Дайджест новостей</p>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Введите Email">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1 8H15" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 1L15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Каталог продукции</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Оплата и Доставка</a></li>
+                        <li><a href="#">Виды нанесения</a></li>
+                        <li><a href="#">Наша выгрузка</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Контакты</p>
+                    <p>220007,
+                        ул. Московская, 22-14 (офис 302)</p>
+                    <a href="tel:+375293500735">+375 (29) 350-07-35</a>
+                    <a href="tel:+375173550772">+375 (17) 355-07-72</a>
+                    <a href="mailto:info@brandy.by">info@brandy.by</a>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="content">
+                    <div class="social">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <path d="M26.454 23.3743L27.0695 19.3946H23.2779V16.8078C23.2779 15.7196 23.8073 14.6563 25.4999 14.6563H27.248V11.2674C26.23 11.1022 25.2014 11.0128 24.1704 11C21.0497 11 19.0124 12.909 19.0124 16.3601V19.3946H15.5532V23.3743H19.0124V33.0001H23.2779V23.3743H26.454Z" fill="white"/>
+                              </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <path d="M18.0054 22.1339C18.0054 19.9223 19.7662 18.129 21.9389 18.129C24.1116 18.129 25.8734 19.9223 25.8734 22.1339C25.8734 24.3455 24.1116 26.1388 21.9389 26.1388C19.7662 26.1388 18.0054 24.3455 18.0054 22.1339ZM15.8785 22.1339C15.8785 25.541 18.5918 28.3029 21.9389 28.3029C25.2861 28.3029 27.9993 25.541 27.9993 22.1339C27.9993 18.7268 25.2861 15.965 21.9389 15.965C18.5918 15.965 15.8785 18.7268 15.8785 22.1339ZM26.823 15.7204C26.8229 16.0055 26.9058 16.2843 27.0613 16.5214C27.2169 16.7586 27.438 16.9434 27.6968 17.0527C27.9555 17.1619 28.2403 17.1905 28.515 17.135C28.7898 17.0795 29.0422 16.9423 29.2403 16.7408C29.4385 16.5392 29.5735 16.2824 29.6282 16.0028C29.683 15.7231 29.6551 15.4333 29.548 15.1698C29.4409 14.9063 29.2594 14.6811 29.0266 14.5226C28.7937 14.3641 28.5199 14.2794 28.2398 14.2793H28.2393C27.8638 14.2795 27.5037 14.4313 27.2382 14.7015C26.9726 14.9717 26.8233 15.3382 26.823 15.7204ZM17.1707 31.9129C16.02 31.8595 15.3946 31.6644 14.979 31.4996C14.4279 31.2812 14.0348 31.0212 13.6214 30.601C13.208 30.1808 12.9522 29.781 12.7386 29.2201C12.5766 28.7972 12.3849 28.1603 12.3326 26.989C12.2754 25.7227 12.2639 25.3423 12.2639 22.134C12.2639 18.9258 12.2763 18.5464 12.3326 17.279C12.385 16.1077 12.5781 15.4721 12.7386 15.048C12.9531 14.4871 13.2086 14.0869 13.6214 13.6661C14.0342 13.2453 14.427 12.9849 14.979 12.7675C15.3944 12.6026 16.02 12.4075 17.1707 12.3542C18.4148 12.296 18.7885 12.2843 21.9389 12.2843C25.0893 12.2843 25.4634 12.2969 26.7085 12.3542C27.8592 12.4075 28.4836 12.6041 28.9003 12.7675C29.4513 12.9849 29.8445 13.2459 30.2579 13.6661C30.6712 14.0863 30.9262 14.4871 31.1407 15.048C31.3027 15.4709 31.4944 16.1077 31.5467 17.279C31.6039 18.5464 31.6153 18.9258 31.6153 22.134C31.6153 25.3423 31.6039 25.7216 31.5467 26.989C31.4943 28.1603 31.3017 28.797 31.1407 29.2201C30.9262 29.781 30.6707 30.1812 30.2579 30.601C29.8451 31.0208 29.4513 31.2812 28.9003 31.4996C28.4849 31.6645 27.8592 31.8596 26.7085 31.9129C25.4645 31.9711 25.0907 31.9828 21.9389 31.9828C18.7871 31.9828 18.4144 31.9711 17.1707 31.9129ZM17.073 10.1929C15.8166 10.2511 14.958 10.4539 14.2082 10.7509C13.4317 11.0576 12.7744 11.469 12.1175 12.1366C11.4606 12.8042 11.0574 13.4744 10.7562 14.2648C10.4644 15.0285 10.2652 15.9019 10.208 17.1809C10.1498 18.4618 10.1365 18.8714 10.1365 22.1339C10.1365 25.3965 10.1498 25.806 10.208 27.087C10.2652 28.366 10.4644 29.2394 10.7562 30.0031C11.0574 30.793 11.4607 31.4639 12.1175 32.1312C12.7743 32.7985 13.4317 33.2094 14.2082 33.517C14.9594 33.8139 15.8166 34.0167 17.073 34.075C18.3321 34.1332 18.7338 34.1477 21.9389 34.1477C25.1441 34.1477 25.5464 34.1342 26.8048 34.075C28.0614 34.0167 28.9194 33.8139 29.6696 33.517C30.4457 33.2094 31.1035 32.7988 31.7604 32.1312C32.4172 31.4637 32.8196 30.793 33.1217 30.0031C33.4135 29.2394 33.6136 28.3659 33.6699 27.087C33.7271 25.8051 33.7404 25.3965 33.7404 22.1339C33.7404 18.8714 33.7271 18.4618 33.6699 17.1809C33.6127 15.9018 33.4135 15.028 33.1217 14.2648C32.8196 13.4749 32.4162 12.8053 31.7604 12.1366C31.1045 11.468 30.4457 11.0576 29.6706 10.7509C28.9194 10.4539 28.0613 10.2502 26.8058 10.1929C25.5474 10.1346 25.145 10.1201 21.9399 10.1201C18.7347 10.1201 18.3321 10.1337 17.073 10.1929Z" fill="white"/>
+                              </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                                <path d="M21.3261 11.0736C17.7548 11.4817 14.1961 14.4395 14.0493 18.6645C13.9569 21.2442 14.6724 23.1796 17.0708 23.723C18.1115 21.8435 16.735 21.429 16.521 20.0693C15.6418 14.4974 22.7991 10.6977 26.5445 14.5877C29.1358 17.2812 27.4299 25.5681 23.2502 24.7068C19.2467 23.8841 25.21 17.2877 22.0143 15.9924C19.4166 14.9399 18.036 19.2123 19.2677 21.3345C18.5459 24.9839 16.991 28.4228 17.6205 33.0001C19.6621 31.4837 20.3504 28.5796 20.9148 25.5509C21.9409 26.1889 22.4885 26.8526 23.7978 26.9557C28.6259 27.3381 31.3222 22.0218 30.6634 17.118C30.078 12.7705 25.8394 10.5581 21.3261 11.0736Z" fill="white"/>
+                              </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5637 22.1411C34.5637 28.7802 29.1817 34.1622 22.5427 34.1622C15.9036 34.1622 10.5216 28.7802 10.5216 22.1411C10.5216 15.5021 15.9036 10.1201 22.5427 10.1201C29.1817 10.1201 34.5637 15.5021 34.5637 22.1411ZM23.6946 18.4525C21.6294 19.3446 15.6748 21.8778 15.6748 21.8778C14.2637 22.4487 15.0897 22.9839 15.0897 22.9839C15.0897 22.9839 16.2944 23.4121 17.327 23.7332C18.3596 24.0543 18.9103 23.6976 18.9103 23.6976C18.9103 23.6976 21.3197 22.0563 23.7634 20.3079C25.4844 19.0948 25.0714 20.0938 24.6583 20.522C23.7634 21.4497 22.2834 22.9126 21.0443 24.09C20.4936 24.5896 20.7689 25.0177 21.0099 25.2318C21.7106 25.8465 23.361 26.9643 24.1103 27.4718C24.318 27.6124 24.4564 27.7062 24.4863 27.7294C24.6583 27.8722 25.6221 28.5144 26.2073 28.3717C26.7924 28.229 26.8612 27.4083 26.8612 27.4083C26.8612 27.4083 27.3087 24.4825 27.7217 21.8065C27.7982 21.2811 27.8747 20.7667 27.9461 20.287C28.1315 19.0403 28.282 18.0283 28.3068 17.6676C28.4101 16.4544 27.171 16.9539 27.171 16.9539C27.171 16.9539 24.4863 18.0957 23.6946 18.4525Z" fill="white"/>
+                              </svg>
+                        </a>
+                    </div>
+                    <p>© 2010-2023 «ООО БРЕНДИ» Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/assets/js/swiper-bundle.min.js"></script>
+    <script src="./src/assets/js/script.js"></script>
+</body>
+</html>

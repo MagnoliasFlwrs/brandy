@@ -82,6 +82,7 @@ if (customSelects) {
 const dropdown = document.querySelector('.dropdown');
 const dropdownList = document.querySelector('.dropdown-list');
 const droprightScreens = document.querySelectorAll('.dropright-screen');
+
 dropdown.addEventListener('click' , ()=> {
     dropdown.classList.toggle('active');
     dropdownList.classList.toggle('active');
@@ -213,6 +214,37 @@ window.addEventListener('DOMContentLoaded', (event) => {
   function makeActive(target){
     let num = target.dataset.num;
     let selector = '.tab-container .tab-content[data-num="'+num+'"]';
+    let targetTab = document.querySelector(selector);
+
+    tabsBtns.forEach(function(el){
+      el.classList.remove('active');
+    });
+    cars.forEach(function(el){
+      el.classList.remove('active');
+    });
+    target.classList.add('active');
+    targetTab.classList.add('active');
+
+  }
+
+
+  });
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const tabsBtns = document.querySelectorAll('.catalog-tabs-panel li');
+    const cars = document.querySelectorAll('.catalog-tab-container .tab-content');
+
+
+    if(tabsBtns){
+      tabsBtns.forEach(function(el){
+        el.addEventListener('mouseenter', function(ev){
+          makeActive(ev.target);
+        });
+      });
+    }
+  function makeActive(target){
+    let num = target.dataset.num;
+    let selector = '.catalog-tab-container .tab-content[data-num="'+num+'"]';
     let targetTab = document.querySelector(selector);
 
     tabsBtns.forEach(function(el){
@@ -418,7 +450,7 @@ let displayValOne = document.querySelector(".price-from");
 let displayValTwo = document.querySelector(".price-to");
 let minGap = 0;
 let sliderTrack = document.querySelector(".slider-track");
-let sliderMaxValue = document.getElementById("price-slider-1").max;
+// let sliderMaxValue = document.getElementById("price-slider-1").max;
 
 function slideOne(){
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
@@ -435,6 +467,7 @@ function slideTwo(){
     fillColor();
 }
 function fillColor(){
+    let sliderMaxValue = document.getElementById("price-slider-1").max;
     percent1 = (sliderOne.value / sliderMaxValue) * 100;
     percent2 = (sliderTwo.value / sliderMaxValue) * 100;
     sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #0465eca4 ${percent1}% , #0465eca4 ${percent2}%, #dadae5 ${percent2}%)`;
@@ -442,12 +475,12 @@ function fillColor(){
 if(sliderOne) {
     sliderOne.addEventListener('input' , ()=>{
         slideOne();
-    }) 
+    })
 }
 if(sliderTwo) {
     sliderTwo.addEventListener('input' ,  () => {
         slideTwo();
-    }) 
+    })
 }
 
 //category-show-more
@@ -458,5 +491,25 @@ if (categoryShowMoreBtn) {
     categoryShowMoreBtn.addEventListener('click' , ()=> {
         categoryShowMoreBtn.classList.add('hide');
         categoryShowMoreBtn.closest('.category-info').querySelector('p').classList.add('show')
-    }) 
+    })
+}
+
+//catalog-popup-menu
+
+const openCatalog = document.querySelector('.open-catalog-popup');
+const catalogPopup = document.querySelector('.catalog-popup');
+
+
+
+if (openCatalog) {
+    openCatalog.addEventListener('click' , ()=> {
+        openCatalog.classList.toggle('active');
+        catalogPopup.classList.toggle('active');
+    })
+    document.addEventListener('click' , (e)=> {
+        if((!e.target.closest('.navigation-catalog')) && catalogPopup.classList.contains('active') && openCatalog.classList.contains('active')) {
+            openCatalog.classList.remove('active');
+            catalogPopup.classList.remove('active');
+        }
+    })
 }

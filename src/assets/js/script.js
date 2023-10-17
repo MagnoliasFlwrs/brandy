@@ -54,13 +54,21 @@ if (customSelects) {
             let currentSelectBody = currentSelectWrap.querySelector('.select-list');
             let currentSelectOptions = currentSelectBody.querySelectorAll('li');
             let currentSelectTitle = el.querySelector('p');
-            console.log(currentSelectTitle);
+            let currentImage = el.querySelector('img')
             currentSelectBody.classList.add('active');
             currentSelectOptions.forEach(option => {
                 option.addEventListener('click' , ()=> {
-                    currentSelectTitle.innerHTML = option.textContent;
-                    currentSelectTitle.dataset.current = option.dataset.value;
-                    currentSelectBody.classList.remove('active');
+                    if (currentSelectTitle) {
+                        currentSelectTitle.innerHTML = option.textContent;
+                        currentSelectTitle.dataset.current = option.dataset.value;
+                        currentSelectBody.classList.remove('active');
+                    }
+                    if (currentImage) {
+                        currentImage.src = option.querySelector('img').src;
+                        currentImage.dataset.current = option.dataset.value;
+                        currentSelectBody.classList.remove('active');
+                    }
+
                 })
             })
         })
@@ -311,14 +319,15 @@ if (productsSwipers) {
     productsSwipers.forEach(el=> {
         const swiper = new Swiper(el, {
             loop: true,
-            slidesPerView: 2,
+            slidesPerView: 1,
+            spaceBetween: 20,
             navigation: {
               nextEl: '.products-btn-next',
               prevEl: '.products-btn-prev',
             },
             breakpoints: {
                 320: {
-                  slidesPerView: 2.1,
+                  slidesPerView: 1.5,
                 },
                 970: {
                   slidesPerView: 3,
@@ -524,7 +533,7 @@ if(newsSwiper) {
             320: {
               slidesPerView: 1.3,
             },
-            
+
             450: {
                 slidesPerView: 2.3,
             },

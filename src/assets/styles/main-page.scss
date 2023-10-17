@@ -1780,6 +1780,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+
+        @media (max-width:1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
         h2 {
             color: #131214;
             font-family: Montserrat;
@@ -1799,6 +1805,63 @@
             line-height: 24px; /* 171.429% */
         }
     }
+    .news-swiper {
+        margin-top: 41px;
+        margin-bottom: 27px;
+        .swiper-slide {
+            border-right: 1px solid #E1E1E1;
+            height: 240px;
+            &:last-child {
+                border-right: none;
+            }
+            .news-card {
+                width: 255px;
+                padding: 42px 14px 65px 33px;
+                display: flex;
+                flex-direction: column;
+                overflow-x: auto;
+                gap: 12px;
+                flex-shrink: 0;
+
+                @media (max-width:450px) {
+                    padding: 30px 15px;
+                }
+
+                .date {
+                    color: #585C5F;
+                    font-family: Montserrat;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 166.667% */
+                    letter-spacing: 0.2px;
+                }
+                p {
+                    color: #131214;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.1px;
+                }
+                .description {
+                    color: #131214;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 142.857% */
+                    letter-spacing: 0.2px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; // количество строк
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    margin-top: auto;
+                }
+            }
+        }
+    }
     .news-cards {
         width: 100%;
         display: flex;
@@ -1816,6 +1879,7 @@
             flex-shrink: 0;
             scrollbar-color:  transparent transparent;
             scrollbar-width: thin;
+
             &:last-child {
                 border-right: none;
             }
@@ -1878,7 +1942,7 @@
         align-items: center;
         gap: 25px;
         @media (max-width:1024px) {
-            padding: 0 16px;
+            padding: 35px 16px;
         }
         p {
             color: #FFF;

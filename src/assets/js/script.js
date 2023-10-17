@@ -513,3 +513,28 @@ if (openCatalog) {
         }
     })
 }
+
+const newsSwiper = document.querySelector('.news-swiper');
+
+if(newsSwiper) {
+    const swiper = new Swiper(newsSwiper, {
+        loop: true,
+        slidesPerView: 1.3,
+        breakpoints: {
+            320: {
+              slidesPerView: 1.3,
+            },
+            
+            450: {
+                slidesPerView: 2.3,
+            },
+            750: {
+              slidesPerView: 3,
+            },
+            1100: {
+              slidesPerView: 4,
+            }
+          }
+      });
+}
+

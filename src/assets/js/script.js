@@ -547,3 +547,106 @@ if(newsSwiper) {
       });
 }
 
+
+const thumbsGallery = document.querySelector('.gallery-mini');
+
+if (thumbsGallery) {
+    let swiper4 = new Swiper(".gallery-mini", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        direction: "horizontal",
+        navigation: {
+            nextEl: ".gallery-mini-button-next",
+            prevEl: ".gallery-mini-button-prev",
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 5,
+                direction: "vertical",
+            }
+        },
+    });
+    let swiper5 = new Swiper(".gallery", {
+        spaceBetween: 10,
+        direction: 'vertical',
+        navigation: {
+            nextEl: ".gallery-button-next",
+            prevEl: ".gallery-button-prev",
+        },
+        thumbs: {
+            swiper: swiper4,
+        },
+    });
+}
+
+
+
+//copy-to-clipboard
+
+
+const copyButton = document.querySelector('.articul-copy');
+function copyToClipboard() {
+    copyButton.addEventListener('click', () => {
+        window.navigator.clipboard.writeText(copyButton.textContent)
+    })
+}
+if (copyButton) {
+    copyToClipboard();
+}
+
+
+const productColorSwiper = document.querySelector('.product-color-swiper');
+
+if (productColorSwiper) {
+    console.log('fvfvg')
+    const swiper = new Swiper(productColorSwiper, {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 6,
+            }
+        },
+    });
+
+}
+const productColorSlides = document.querySelectorAll('.product-color-swiper .swiper-slide');
+
+function clearColorClass() {
+    productColorSlides.forEach(el=> {
+        if(el.classList.contains('active')) {
+            el.classList.remove('active');
+        }
+    })
+}
+if (productColorSlides) {
+    productColorSlides.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            clearColorClass();
+            el.classList.add('active');
+        })
+    })
+}
+
+// product-page-cart
+
+const productPageInput = document.querySelector('.product-add-to-cart input');
+const productPageBtn = document.querySelector('.product-add-to-cart button');
+
+if(productPageInput) {
+
+    productPageInput.addEventListener('input' , ()=> {
+        if (productPageInput.value) {
+            productPageBtn.textContent = 'В КОРЗИНЕ';
+        } else {
+            productPageBtn.textContent = 'В КОРЗИНУ';
+        }
+    })
+
+}

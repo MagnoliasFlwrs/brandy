@@ -650,3 +650,34 @@ if(productPageInput) {
     })
 
 }
+
+// product page application counter
+
+const counter = document.querySelector('.counter-wrap .counter');
+const minusBtn = document.querySelector('.counter-wrap .minus');
+const plusBtn = document.querySelector('.counter-wrap .plus');
+
+if (counter) {
+    minusBtn.addEventListener('click' , ()=> {
+        if (counter.innerHTML > 0) {
+            counter.innerHTML = +counter.innerHTML - 1;
+        }
+    })
+    plusBtn.addEventListener('click' , ()=> {
+        if (counter.innerHTML >= 0) {
+            counter.innerHTML = +counter.innerHTML + 1;
+        }
+    })
+}
+
+//product-page-application
+
+const applicationBtn = document.querySelector('.add-application');
+const applicationBlock = document.querySelector('.application-form');
+if (applicationBtn) {
+    applicationBtn.addEventListener('click' , ()=> {
+        applicationBtn.classList.toggle('active');
+        applicationBlock.classList.toggle('active');
+
+    })
+}

@@ -683,6 +683,107 @@
                         <input type="tel" placeholder="Тираж">
                         <button type="submit">В КОРЗИНУ</button>
                     </div>
+                    <div class="edition">
+                        <p>Минимальный тираж</p>
+                        <span>40 шт.</span>
+                    </div>
+                    <div class="application">
+                        <button class="add-application">Добавить нанесение</button>
+                        <div class="application-form">
+                            <form>
+                                <div class="row">
+                                    <div class="inner">
+                                        <span>Тип нанесения*</span>
+                                        <div class="select-wrap">
+                                            <div class="select ">
+                                                <p data-current="0">Тиснение</p>
+                                            </div>
+                                            <ul class="select-list">
+                                                <li data-value="0">Тиснение</li>
+                                                <li data-value="1">Тиснение 1</li>
+                                                <li data-value="2">Тиснение 2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <span>Количество товаров*</span>
+                                        <div class="counter-wrap">
+                                            <button type="button" class="minus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="3" viewBox="0 0 14 3" fill="none">
+                                                    <path d="M1.10034 1.5L12.8998 1.5" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>
+                                            </button>
+                                            <span class="counter">1</span>
+                                            <button type="button" class="plus">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                                    <path d="M0.992188 6.5H6.74219M6.74219 6.5H12.4922M6.74219 6.5V0.75M6.74219 6.5V12.25" stroke="#0464EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="inner">
+                                        <span>У Вас есть клише?*</span>
+                                        <div class="radiobtns">
+                                            <div>
+                                            <input type="radio" name="rb" id="rb1" checked> <label for="rb1">Да</label>
+                                            </div>
+
+                                            <div>
+                                            <input type="radio" name="rb" id="rb2"> <label for="rb2">Нет</label>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row type-application">
+                                    <div class="inner">
+                                        <span>Тип нанесения*</span>
+                                        <input type="text" placeholder="Место нанесения">
+                                    </div>
+                                    <div class="inner">
+                                        <span>Площадь нанесения*</span>
+                                        <div class="params-inputs">
+                                            <input type="text" placeholder="Ш см">
+                                            <input type="text" placeholder="В см">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result">
+                                    <ul class="count">
+                                        <li><span>Количество</span></li>
+                                        <li><span>1 шт</span></li>
+                                        <li><span>1 шт</span></li>
+                                    </ul>
+                                    <ul class="price-result">
+                                        <li><span>Стоимость, BYN</span></li>
+                                        <li><span>20.62</span></li>
+                                        <li><span>20.62</span></li>
+                                    </ul>
+                                    <ul class="application">
+                                        <li><span>Тиснение</span></li>
+                                        <li><span>84</span></li>
+                                        <li><span>84</span></li>
+                                    </ul>
+                                    <ul class="general-price">
+                                        <li><span>Итого, BYN</span></li>
+                                        <li><span>104.62</span></li>
+                                        <li><span>104.62</span></li>
+                                    </ul>
+                                </div>
+                                <div class="result-attention">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                        <circle cx="12.25" cy="12.75" r="11.4844" fill="#FF645A"/>
+                                        <path d="M12.2499 19.1301C12.9547 19.1301 13.526 18.5588 13.526 17.854C13.526 17.1493 12.9547 16.578 12.2499 16.578C11.5452 16.578 10.9739 17.1493 10.9739 17.854C10.9739 18.5588 11.5452 19.1301 12.2499 19.1301Z" fill="white"/>
+                                        <path d="M12.2499 6.36967C11.9115 6.36967 11.5869 6.50411 11.3476 6.74341C11.1083 6.98272 10.9739 7.30728 10.9739 7.64571V14.0259C10.9739 14.3643 11.1083 14.6889 11.3476 14.9282C11.5869 15.1675 11.9115 15.302 12.2499 15.302C12.5883 15.302 12.9129 15.1675 13.1522 14.9282C13.3915 14.6889 13.526 14.3643 13.526 14.0259V7.64571C13.526 7.30728 13.3915 6.98272 13.1522 6.74341C12.9129 6.50411 12.5883 6.36967 12.2499 6.36967Z" fill="white"/>
+                                      </svg>
+                                      <span>Цена нанесения может быть изменена. При изменении
+                                        менеджер свяжется с вами.</span>
+                                </div>
+                                <button type="submit" class="application-submit">Добавить </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
             </div>

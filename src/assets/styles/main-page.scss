@@ -762,11 +762,11 @@
                         .swiper-slide {
                             .product-card-inner {
                                 // width: 255px;
-                                height: 480px;
+                                height: 440px;
                                 position: relative;
                                 @media (max-width:768px) {
                                     // width: 164px;
-                                    height: 330px;
+                                    height: 370px;
                                 }
 
                                 .product-card {
@@ -973,6 +973,9 @@
                                         font-style: normal;
                                         font-weight: 600;
                                         display: none;
+                                        @media (max-width:768px) {
+                                            padding: 10px 20px
+                                        }
                                     }
 
                                 }
@@ -985,9 +988,9 @@
                                         z-index: 5;
                                         .hidden-btn {
                                             display: block;
-                                            @media (max-width:768px) {
-                                                display: none;
-                                            }
+                                            // @media (max-width:768px) {
+                                            //     display: none;
+                                            // }
                                         }
                                         @media (max-width:768px ) {
                                             box-shadow: none;

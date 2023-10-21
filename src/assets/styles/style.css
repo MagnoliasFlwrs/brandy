@@ -190,6 +190,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 5;
   display: none;
 }
 .select-wrap .select-list.active {

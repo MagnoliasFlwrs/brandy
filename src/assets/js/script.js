@@ -301,7 +301,7 @@ if (thumbsList) {
     }
   thumbs.forEach((el,i)=> {
     el.addEventListener('click' , (e)=> {
-        let currbigImgs = e.target.closest('.gallery').querySelectorAll('.images img');
+        let currbigImgs = e.target.closest('.gallery-images').querySelectorAll('.images img');
         clearThumbClasses()
         el.closest('li').classList.add('active-thumb');
         currbigImgs.forEach(img=> {
@@ -496,6 +496,7 @@ if(sliderTwo) {
 
 const categoryShowMoreBtn = document.querySelector('.category-info span');
 
+
 if (categoryShowMoreBtn) {
     categoryShowMoreBtn.addEventListener('click' , ()=> {
         categoryShowMoreBtn.classList.add('hide');
@@ -679,5 +680,18 @@ if (applicationBtn) {
         applicationBtn.classList.toggle('active');
         applicationBlock.classList.toggle('active');
 
+    })
+}
+
+
+//portfolio-show-more
+
+const portfolioShowMoreBtn = document.querySelector('.portfolio-info span');
+
+
+if (portfolioShowMoreBtn) {
+    portfolioShowMoreBtn.addEventListener('click' , ()=> {
+        portfolioShowMoreBtn.classList.add('hide');
+        portfolioShowMoreBtn.closest('.portfolio-info').querySelector('p').classList.add('show')
     })
 }

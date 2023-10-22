@@ -1692,6 +1692,9 @@
         font-weight: 600;
         line-height: 40px; /* 125% */
         letter-spacing: 0.1px;
+        @media (max-width:1024px) {
+            font-size: 28px;
+        }
         span {
             color: #0464EC;
             font-family: Montserrat;
@@ -1700,6 +1703,9 @@
             font-weight: 600;
             line-height: 40px;
             letter-spacing: 0.1px;
+            @media (max-width:1024px) {
+            font-size: 28px;
+        }
         }
 
     }

@@ -1720,6 +1720,11 @@
   line-height: 40px; /* 125% */
   letter-spacing: 0.1px;
 }
+@media (max-width: 1024px) {
+  .customers h2 {
+    font-size: 28px;
+  }
+}
 .customers h2 span {
   color: #0464EC;
   font-family: Montserrat;
@@ -1728,6 +1733,11 @@
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.1px;
+}
+@media (max-width: 1024px) {
+  .customers h2 span {
+    font-size: 28px;
+  }
 }
 .customers .swiper-row {
   padding: 66px 0;

@@ -1,0 +1,97 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+.head-row {
+  padding: 25px 0 0;
+}
+@media (max-width: 1100px) {
+  .head-row .breadcrumbs li {
+    display: none;
+  }
+  .head-row .breadcrumbs li:first-child {
+    display: block;
+  }
+  .head-row .breadcrumbs li:nth-child(2) {
+    display: block;
+  }
+  .head-row .breadcrumbs li:last-child {
+    display: block;
+  }
+}
+.head-row .head-row-info {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .head-row .head-row-info {
+    flex-direction: column;
+    gap: 36px;
+  }
+}
+.head-row .head-row-info .info h1 {
+  color: #131214;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  letter-spacing: 0.1px;
+  margin: 40px 0 30px;
+}
+@media (max-width: 1024px) {
+  .head-row .head-row-info .info h1 {
+    font-size: 28px;
+    margin: 30px 0 20px;
+  }
+}
+.head-row .head-row-info .info .portfolio-info {
+  max-width: 100%;
+}
+@media (max-width: 1024px) {
+  .head-row .head-row-info .info .portfolio-info {
+    max-width: 100%;
+  }
+}
+.head-row .head-row-info .info .portfolio-info p {
+  color: #0C0C0C;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 0, rgb(0, 0, 0) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .head-row .head-row-info .info .portfolio-info p {
+    font-size: 14px;
+  }
+}
+.head-row .head-row-info .info .portfolio-info p.show {
+  display: block;
+  -webkit-mask: none;
+}
+.head-row .head-row-info .info .portfolio-info span {
+  cursor: pointer;
+  color: #1071FF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+@media (max-width: 1024px) {
+  .head-row .head-row-info .info .portfolio-info span {
+    font-size: 14px;
+  }
+}
+.head-row .head-row-info .info .portfolio-info span.hide {
+  display: none;
+}/*# sourceMappingURL=brands-single.css.map */

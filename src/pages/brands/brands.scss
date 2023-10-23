@@ -1,0 +1,127 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/footer.css);
+
+.head-row {
+    padding: 25px 0 0;
+
+    @media (max-width:1100px) {
+        .breadcrumbs {
+            li {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+                &:nth-child(2) {
+                    display: block;
+                }
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+    }
+    h1 {
+        color: #131214;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 125% */
+        letter-spacing: 0.1px;
+        margin: 40px 0 30px;
+
+        @media (max-width:1024px) {
+            font-size: 28px;
+            margin: 30px 0 20px;
+        }
+    }
+    .portfolio-info {
+        max-width: 70%;
+        @media (max-width:1024px) {
+            max-width: 100%;
+        }
+        p {
+            color:  #0C0C0C;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-mask: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgb(0, 0, 0) 0,
+            rgb(0, 0, 0) calc(100% - 50px),
+            rgba(0, 0, 0, 0) 100%
+            );
+            margin-bottom: 10px;
+            transition: .3s ease;
+            @media (max-width:1024px) {
+                font-size: 14px;
+            }
+
+            &.show {
+                display: block;
+                -webkit-mask:none
+            }
+        }
+        span {
+            cursor: pointer;
+            color: #1071FF;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 150% */
+            @media (max-width:1024px) {
+                font-size: 14px;
+            }
+
+            &.hide {
+                display: none;
+            }
+        }
+    }
+}
+.brands-container {
+    padding: 36px 0 150px;
+    .brands-cards {
+        width: 100%;
+        display: flex;
+        gap: 17px;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media (max-width:1024px) {
+            gap: 10px;
+        }
+        .brand-card {
+            width: 170px;
+            height: 95px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            background: #FFF;
+            box-shadow: 0px 29.97567px 39.96755px 0px rgba(212, 217, 232, 0.20);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: .3;
+            transition: .3s ease;
+
+            @media (max-width:1024px) {
+                width: 150px;
+                height: 85px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

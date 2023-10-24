@@ -150,7 +150,7 @@
   padding: 16px;
   background: #FFF;
   box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
-  z-index: 5;
+  z-index: 20;
 }
 .header .header-pc .main-row .content .search-wrapper .input-wrapper {
   position: relative;

@@ -26,11 +26,12 @@ if (paramsBtn) {
 }
 
 //search-results
+const search = document.querySelector('.search-input');
 const searchWrap = document.querySelector('.search-wrapper');
 const overlay = document.querySelector('.overlay');
 const resultWrap = document.querySelector('.results');
 
-searchInput.addEventListener('input' , ()=> {
+search.addEventListener('input' , ()=> {
     overlay.classList.add('open');
     searchWrap.classList.add('to-result');
     resultWrap.classList.add('active')
@@ -765,3 +766,14 @@ if (modalCart) {
     showModalCart();
     closeModalCart();
 }
+
+//cookie
+
+const cookieClose = document.querySelectorAll('.close-cookie');
+const cookieBanner = document.querySelector('.cookie-banner');
+
+cookieClose.forEach(el=> {
+    el.addEventListener('click' , ()=> {
+        cookieBanner.classList.add('hide')
+    })
+})

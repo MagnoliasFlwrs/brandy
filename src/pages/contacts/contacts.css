@@ -602,14 +602,219 @@
   display: block;
 }
 .team .content .big-img-wrap {
-  width: 800px;
+  max-width: 1000px;
+  width: 100%;
   height: 500px;
   margin: 0 auto;
   margin-top: 100px;
+}
+@media (max-width: 1024px) {
+  .team .content .big-img-wrap {
+    height: 300px;
+  }
 }
 .team .content .big-img-wrap img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.quote {
+  background-image: url(../../assets/images/contacts-bgpng.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0 50px;
+}
+.quote .content {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  align-items: center;
+}
+.quote .content .team-card {
+  width: 311px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+@media (max-width: 1024px) {
+  .quote .content .team-card {
+    width: calc((100% - 50px) / 3);
+  }
+}
+@media (max-width: 768px) {
+  .quote .content .team-card {
+    width: calc((100% - 25px) / 2);
+    gap: 9px;
+  }
+}
+@media (max-width: 400px) {
+  .quote .content .team-card {
+    width: 100%;
+  }
+}
+.quote .content .team-card .image {
+  width: 100%;
+  height: 300px;
+}
+@media (max-width: 1024px) {
+  .quote .content .team-card .image {
+    height: 250px;
+  }
+}
+.quote .content .team-card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.quote .content .team-card .name {
+  color: #131214;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+@media (max-width: 1024px) {
+  .quote .content .team-card .name {
+    font-size: 13px;
+  }
+}
+.quote .content .team-card .post {
+  color: #585C5F;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+}
+@media (max-width: 1024px) {
+  .quote .content .team-card .post {
+    font-size: 11px;
+  }
+}
+.quote .content .team-card .phone {
+  color: #131214;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 1024px) {
+  .quote .content .team-card .phone {
+    font-size: 11px;
+  }
+}
+.quote .content .team-card .phone::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_1094_4330)'%3E%3Cpath d='M16.6036 12.8776V15.1276C16.6044 15.3364 16.5617 15.5432 16.478 15.7346C16.3943 15.926 16.2716 16.0978 16.1176 16.239C15.9637 16.3802 15.782 16.4877 15.5841 16.5546C15.3863 16.6215 15.1766 16.6464 14.9686 16.6276C12.6607 16.3768 10.4438 15.5882 8.49609 14.3251C6.68396 13.1736 5.14759 11.6372 3.99609 9.82507C2.72857 7.86848 1.93977 5.64082 1.69359 3.32257C1.67485 3.11517 1.69949 2.90614 1.76596 2.70879C1.83243 2.51144 1.93927 2.33009 2.07966 2.17629C2.22006 2.02249 2.39094 1.8996 2.58143 1.81546C2.77192 1.73132 2.97784 1.68777 3.18609 1.68757H5.43609C5.80007 1.68399 6.15293 1.81288 6.42891 2.05022C6.70489 2.28756 6.88515 2.61716 6.93609 2.97757C7.03105 3.69762 7.20718 4.40462 7.46109 5.08507C7.562 5.35352 7.58383 5.64526 7.52402 5.92573C7.4642 6.20621 7.32524 6.46366 7.12359 6.66757L6.17109 7.62007C7.23875 9.49773 8.79343 11.0524 10.6711 12.1201L11.6236 11.1676C11.8275 10.9659 12.085 10.827 12.3654 10.7671C12.6459 10.7073 12.9376 10.7292 13.2061 10.8301C13.8865 11.084 14.5935 11.2601 15.3136 11.3551C15.6779 11.4065 16.0106 11.59 16.2485 11.8707C16.4863 12.1514 16.6127 12.5098 16.6036 12.8776Z' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1094_4330'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  display: block;
+}
+.quote .content .team-card .email {
+  color: #131214;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 1024px) {
+  .quote .content .team-card .email {
+    font-size: 11px;
+  }
+}
+.quote .content .team-card .email::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M16.5 4.5C16.5 3.675 15.825 3 15 3H3C2.175 3 1.5 3.675 1.5 4.5M16.5 4.5V13.5C16.5 14.325 15.825 15 15 15H3C2.175 15 1.5 14.325 1.5 13.5V4.5M16.5 4.5L9 9.75L1.5 4.5' stroke='%230464EC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  display: block;
+}
+.quote .content .quote-text {
+  max-width: 735px;
+  color: #0E0E0F;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 129.7%; /* 41.504px */
+}
+@media (max-width: 1024px) {
+  .quote .content .quote-text {
+    font-size: 28px;
+  }
+}
+
+.banner-wrapper {
+  padding: 90px 0 60px;
+  background-image: url(../../assets/images/main-page/new.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .banner-wrapper {
+    padding: 35px 0 50px;
+  }
+}
+.banner-wrapper .banner {
+  width: 100%;
+  border-radius: 8px;
+  border-collapse: collapse;
+  background-image: url(../../assets/images/main-page/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  padding: 35px 0 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+@media (max-width: 1024px) {
+  .banner-wrapper .banner {
+    padding: 35px 16px;
+  }
+}
+.banner-wrapper .banner p {
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px; /* 135.294% */
+}
+@media (max-width: 1024px) {
+  .banner-wrapper .banner p {
+    font-size: 26px;
+  }
+}
+.banner-wrapper .banner button {
+  width: 209px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 4px solid #FFF;
+  background: linear-gradient(0deg, #0464EC 0%, #0464EC 100%), linear-gradient(264deg, #73DFE7 -29.33%, #0063F7 98.4%);
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .banner-wrapper .banner button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=contacts.css.map */

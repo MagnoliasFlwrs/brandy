@@ -23,11 +23,12 @@
   .head-row .sort {
     display: flex;
     width: 100%;
-    overflow-x: auto;
+    overflow: auto;
     gap: 16px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     flex-shrink: 0;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    scroll-snap-type: x mandatory;
   }
   .head-row .sort::-webkit-scrollbar {
     background-color: transparent;

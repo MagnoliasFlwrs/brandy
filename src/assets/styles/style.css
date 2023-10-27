@@ -645,6 +645,255 @@ body {
   line-height: 24px; /* 150% */
 }
 
+.filter-modal {
+  position: fixed;
+  top: 0;
+  right: -2100px;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  box-shadow: -2px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.5s ease;
+  overflow: auto;
+}
+.filter-modal.open {
+  right: 0;
+}
+.filter-modal .modal-head {
+  width: 100%;
+  padding: 24px 24px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.filter-modal .modal-head .modal-close {
+  cursor: pointer;
+}
+.filter-modal .filter-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+}
+.filter-modal .filter-body .filter-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 0px 0px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-top: 1px solid #E1E1E1;
+}
+.filter-modal .filter-body .filter-item .filter-title {
+  color: #131214;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  margin-bottom: 6px;
+}
+.filter-modal .filter-body .filter-item.filter-links {
+  gap: 12px;
+  border-top: none;
+}
+.filter-modal .filter-body .filter-item.filter-links span {
+  color: #131214;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s ease;
+  display: block;
+  cursor: pointer;
+}
+.filter-modal .filter-body .filter-item.filter-links span:hover {
+  color: #0464EC;
+}
+.filter-modal .filter-body .filter-item.color .filter-title {
+  margin-bottom: 30px;
+}
+.filter-modal .filter-body .filter-item.color ul {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.filter-modal .filter-body .filter-item.color ul li {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  border: 1px solid #E9E9E9;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.filter-modal .filter-body .filter-item.color ul li:hover {
+  border: 1px solid #0464EC;
+}
+.filter-modal .filter-body .filter-item.color ul li span {
+  width: 20px;
+  height: 20px;
+  border-radius: 500px;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-white {
+  background-color: #fff;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-gray {
+  background-color: gray;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-black {
+  background-color: black;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-dark {
+  background-color: rgb(59, 58, 58);
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-red {
+  background-color: red;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-violet {
+  background-color: violet;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-beuge {
+  background-color: beige;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-yellow {
+  background-color: yellow;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-blue {
+  background-color: blue;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-ligth-blue {
+  background-color: rgb(115, 115, 226);
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-green {
+  background-color: green;
+}
+.filter-modal .filter-body .filter-item.color ul li span.color-orange {
+  background-color: orange;
+}
+.filter-modal .filter-body .filter-item.price .filter-title {
+  margin-bottom: 30px;
+}
+.filter-modal .filter-body .filter-item.price .price-inputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.filter-modal .filter-body .filter-item.price .price-inputs input {
+  display: flex;
+  width: 99px;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #EAECEE;
+  background: #FFF;
+  outline: none;
+  flex-shrink: 0;
+}
+.filter-modal .filter-body .filter-item.price .price-inputs input::-moz-placeholder {
+  color: #585C5F;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+  text-transform: capitalize;
+}
+.filter-modal .filter-body .filter-item.price .price-inputs input::placeholder {
+  color: #585C5F;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+  text-transform: capitalize;
+}
+.filter-modal .filter-body .filter-item.price .price-inputs .line {
+  width: 23px;
+  height: 1px;
+  background: #E1E1E1;
+  flex-shrink: 0;
+}
+.filter-modal .filter-body .filter-item.price .price-slider {
+  position: relative;
+  width: 100%;
+}
+.filter-modal .filter-body .filter-item.price .price-slider input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.filter-modal .filter-body .filter-item.price .price-slider .slider-track {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: rgba(4, 101, 236, 0.6431372549);
+}
+.filter-modal .filter-body .filter-item.price .price-slider input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 3px;
+}
+.filter-modal .filter-body .filter-item.price .price-slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #0464EC;
+  cursor: pointer;
+  margin-top: -7px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.filter-modal .filter-body .filter-item.price .price-slider input[type=range]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 3px solid #0464EC;
+}
+.filter-modal .filter-body button {
+  margin-top: 50px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #0464EC;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #0464EC;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
 .modal-contact {
   position: fixed;
   top: 0;

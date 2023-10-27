@@ -777,3 +777,20 @@ cookieClose.forEach(el=> {
         cookieBanner.classList.add('hide')
     })
 })
+
+//filter modal
+
+const filterBtns = document.querySelectorAll('.to-modal-filter');
+const closeFilterModal = document.querySelector('.filter-modal .modal-close');
+const filterModal = document.querySelector('.filter-modal');
+
+if (filterBtns && filterModal) {
+    filterBtns.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            filterModal.classList.add('open')
+        })
+    })
+    closeFilterModal.addEventListener('click' , ()=> {
+        filterModal.classList.remove('open')
+    })
+}

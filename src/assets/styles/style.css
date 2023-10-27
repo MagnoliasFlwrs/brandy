@@ -630,7 +630,7 @@ body {
 .modal-cart .modal-cart-result .link-wrap .to-cart {
   display: flex;
   width: 100%;
-  padding: 12px 86px;
+  padding: 12px;
   justify-content: center;
   align-items: center;
   gap: 4px;

@@ -1013,7 +1013,7 @@
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #0464EC;
-  background: #E6EFFB;
+  background: rgba(230, 239, 251, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1035,7 +1035,7 @@
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #0464EC;
-  background: #E6EFFB;
+  background: rgba(230, 239, 251, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1759,7 +1759,7 @@
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #0464EC;
-  background: #E6EFFB;
+  background: rgba(230, 239, 251, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1785,7 +1785,7 @@
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #0464EC;
-  background: #E6EFFB;
+  background: rgba(230, 239, 251, 0.4);
   cursor: pointer;
   display: flex;
   align-items: center;

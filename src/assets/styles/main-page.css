@@ -113,18 +113,21 @@
   height: 100%;
   position: relative;
 }
-.head-block .head-block-row .catalog-promo .swiper .swiper-slide picture {
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a {
+  display: block;
+}
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a picture {
   display: block;
   width: 100% !important;
   height: 100% !important;
 }
-.head-block .head-block-row .catalog-promo .swiper .swiper-slide picture img {
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a picture img {
   width: 100% !important;
   height: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content {
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content {
   position: absolute;
   left: 57px;
   top: 143px;
@@ -133,13 +136,13 @@
   gap: 12px;
 }
 @media (max-width: 1024px) {
-  .head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content {
+  .head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content {
     left: 31px;
     top: 42px;
     gap: 14px;
   }
 }
-.head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content p {
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content p {
   color: #131214;
   font-family: Montserrat;
   font-size: 14px;
@@ -149,11 +152,11 @@
   letter-spacing: 0.3px;
 }
 @media (max-width: 1024px) {
-  .head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content p {
+  .head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content p {
     font-size: 13px;
   }
 }
-.head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content h2 {
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content h2 {
   color: #131214;
   font-family: Calypso;
   font-size: 48px;
@@ -163,16 +166,16 @@
   letter-spacing: 0.2px;
 }
 @media (max-width: 1024px) {
-  .head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content h2 {
+  .head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content h2 {
     font-size: 32px;
   }
 }
-.head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content a {
+.head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content a {
   margin-top: 17px;
   width: 172px;
 }
 @media (max-width: 1024px) {
-  .head-block .head-block-row .catalog-promo .swiper .swiper-slide .slide-content a {
+  .head-block .head-block-row .catalog-promo .swiper .swiper-slide a .slide-content a {
     margin-top: 0;
     width: 149px;
     height: 42px;
@@ -325,6 +328,11 @@
   padding: 22px 0;
   gap: 24px;
 }
+@media (max-width: 1200px) {
+  .head-block .category-links {
+    gap: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .head-block .category-links {
     flex-direction: column;
@@ -334,7 +342,8 @@
   }
 }
 .head-block .category-links a {
-  width: 255px;
+  max-width: calc((100% - 96px) / 5);
+  width: 100%;
   height: 87px;
   flex-shrink: 0;
   display: flex;
@@ -345,10 +354,18 @@
   border-radius: 8px;
   background: linear-gradient(0deg, #F5F6FA 0%, #F5F6FA 100%), linear-gradient(272deg, #73DFE7 -71.85%, #0063F7 123.44%);
 }
+@media (max-width: 1200px) {
+  .head-block .category-links a {
+    max-width: calc((100% - 60px) / 5);
+    gap: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .head-block .category-links a {
     justify-content: flex-start;
+    max-width: 100%;
     width: 100%;
+    gap: 24px;
   }
 }
 .head-block .category-links a p {
@@ -532,6 +549,11 @@
 .catalog-block .catalog-category li {
   width: calc((100% - 75px) / 4);
 }
+@media (max-width: 1370px) {
+  .catalog-block .catalog-category li {
+    width: calc((100% - 50px) / 3);
+  }
+}
 @media (max-width: 1024px) {
   .catalog-block .catalog-category li {
     width: 100%;
@@ -598,7 +620,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px; /* 112.5% */
-  height: 31.114px;
   margin-bottom: 10px;
 }
 @media (max-width: 1024px) {

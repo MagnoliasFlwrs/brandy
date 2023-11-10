@@ -446,28 +446,34 @@
                     }
                 }
             }
-            .edition {
-                display: flex;
-                gap: 50px;
-                align-items: center;
+            .edition-wrapper {
                 margin-bottom: 30px;
-                p {
-                    color: #585C5F;
-                    font-family: Montserrat;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 170%; /* 23.8px */
-                }
-                span {
-                    color: #131214;
-                    font-family: Montserrat;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 170%; /* 23.8px */
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .edition {
+                    display: flex;
+                    gap: 50px;
+                    align-items: center;
+                    p {
+                        color: #585C5F;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 170%; /* 23.8px */
+                    }
+                    span {
+                        color: #131214;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 170%; /* 23.8px */
+                    }
                 }
             }
+
             .application {
                 .add-application {
                     display: flex;
@@ -996,7 +1002,7 @@ input[type="radio"]:checked + label:after {
                     }
                     .description-block {
                         display: flex;
-                        width: 336px;
+                        // width: 336px;
                         height: fit-content;
                         padding: 16px;
                         flex-direction: column;
@@ -1018,62 +1024,78 @@ input[type="radio"]:checked + label:after {
                             font-weight: 700;
                             line-height: 130%; /* 20.8px */
                         }
-                        ul {
+                        .description-lists {
                             display: flex;
-                            width: 100%;
-                            flex-direction: column;
-                            gap: 8px;
-                            list-style: unset;
-                            list-style-type: disc;
-                            li {
+                            gap: 30px;
+                            ul {
                                 display: flex;
-                                justify-content: space-between;
-                                gap: 20px;
+                                width: 100%;
+                                flex-direction: column;
+                                gap: 8px;
+                                list-style: unset;
+                                list-style-type: disc;
+                                li {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    gap: 10px;
 
+                                    span {
+                                        color: #131214;
+                                        font-family: Montserrat;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px; /* 171.429% */
+                                        @media (max-width:1024px) {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    div {
+                                        flex: 1 0;
+                                        border-bottom: 1px dotted #000;
+                                        height: 1em;
+                                        margin: 0 2px;
+                                        min-width: 10px;
+                                    }
+                                }
                                 &:first-child {
-                                    span {
-                                        &:last-child {
-                                            color: #0464EC;
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 24px;
-                                            @media (max-width:1024px) {
-                                                font-size: 13px;
+                                    li {
+                                        &:first-child {
+                                            span {
+                                                &:last-child {
+                                                    color: #0464EC;
+                                                    font-family: Montserrat;
+                                                    font-size: 14px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 24px;
+                                                    @media (max-width:1024px) {
+                                                        font-size: 13px;
+                                                    }
+                                                }
                                             }
                                         }
-                                    }
-                                }
-                                &:nth-child(2) {
-                                    span {
-                                        &:last-child {
-                                            color: #0464EC;
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 24px;
-                                            @media (max-width:1024px) {
-                                                font-size: 13px;
+                                        &:nth-child(2) {
+                                            span {
+                                                &:last-child {
+                                                    color: #0464EC;
+                                                    font-family: Montserrat;
+                                                    font-size: 14px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 24px;
+                                                    @media (max-width:1024px) {
+                                                        font-size: 13px;
+                                                    }
+                                                }
                                             }
                                         }
-                                    }
-                                }
-
-                                span {
-                                    color: #131214;
-                                    font-family: Montserrat;
-                                    font-size: 14px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: 24px; /* 171.429% */
-                                    @media (max-width:1024px) {
-                                        font-size: 13px;
                                     }
                                 }
                             }
+
                         }
+
                     }
                 }
                 .characteristic-block {

@@ -97,8 +97,12 @@
   }
 }
 .catalog-block .catalog-category li {
-  width: calc((100% - 75px) / 3);
-  height: auto;
+  width: calc((100% - 75px) / 4);
+}
+@media (max-width: 1370px) {
+  .catalog-block .catalog-category li {
+    width: calc((100% - 50px) / 3);
+  }
 }
 @media (max-width: 1024px) {
   .catalog-block .catalog-category li {
@@ -164,7 +168,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px; /* 112.5% */
-  height: 31.114px;
   margin-bottom: 10px;
 }
 @media (max-width: 1024px) {
